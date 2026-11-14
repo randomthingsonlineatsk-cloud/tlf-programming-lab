@@ -1,4 +1,4 @@
-// Comparing two outputs, the way independent double programming is checked (PROC COMPARE in SAS,
+// Comparing two outputs, the way independent double programming is checked (a compare procedure,
 // diffdf in R): match records by key, then report variables missing on either side, records
 // missing on either side, and every value that differs. Numbers match within a tolerance.
 import type { Frame } from './runner'

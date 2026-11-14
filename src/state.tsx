@@ -1,6 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react'
-import type { LabProject } from './domain/lab'
-const upgrade = (p: LabProject) => p
+import { upgrade, type LabProject } from './domain/lab'
 import { listProjects, saveProject, deleteProject } from './domain/store'
 
 interface Store {

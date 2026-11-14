@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import { currentHandoff, referenceFrames } from '../rclient'
-import { PROGRAMS } from '../domain/rcode'
+import { useEffect, useState } from 'react'
+import { currentHandoff, currentPack, referenceFrames, sdtm } from '../rclient'
 import type { Frame } from '../domain/runner'
 import { FrameTable } from './Programs'
 import { Panel, Pill, Table } from './ui'
@@ -10,14 +9,15 @@ import { Panel, Pill, Table } from './ui'
 export default function Data({ ready }: { ready: boolean }) {
   const h = currentHandoff()
   const [sel, setSel] = useState('sdtm:DM')
+  const [sd, setSd] = useState<Frame | null>(null)
+  useEffect(() => { setSd(null); const [k, n] = sel.split(':'); if (ready && k === 'sdtm') sdtm(n).then(setSd).catch(() => setSd(null)) }, [sel, ready])
   if (!ready || !h) return <Panel title="Data"><p className="text-sm text-lab-text-muted">Waiting for R to load the hand-off…</p></Panel>
   const refs = referenceFrames()
-  const adam = PROGRAMS.filter((p) => p.kind === 'dataset')
+  const adam = (currentPack()?.programs ?? []).filter((p) => p.kind === 'dataset')
   const [kind, name] = sel.split(':')
   let f: Frame | undefined
   if (kind === 'sdtm') {
-    const d = h.datasets.find((x) => x.name === name)
-    if (d) f = { columns: d.columns.map((c) => c.name), rows: d.rows.map((r) => r.map((v) => (v === null || v === undefined || v === '' ? null : String(v)))) }
+    f = sd ?? undefined
   } else f = refs[name]
   const meta = kind === 'sdtm' ? h.datasets.find((x) => x.name === name) : undefined
   return (
