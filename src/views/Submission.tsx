@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react'
 import { useStore } from '../state'
 import { packOf } from '../domain/rcode'
 import { checkDataset, findingKey, RULES, type Finding } from '../domain/conform'
-import { defineXml, adrgHtml, reportingEvent, buildPackage } from '../domain/submission'
+import { defineXml, adrgHtml, reportingEvent, buildPackage, ardFromReportingEvent, type ImportedTable } from '../domain/submission'
+import { PACKS } from '../domain/rcode'
+import { displayRtf } from '../domain/display'
 import { codeHash, done } from '../domain/lab'
 import { logClean } from '../domain/logscan'
 import { cutKey, cutLabel } from '../domain/cut'
@@ -72,6 +74,40 @@ export default function Submission({ ready }: { ready: boolean }) {
         <p className="text-xs text-lab-text-muted">The package holds the analysis datasets (Dataset-JSON v1.1), results, displays (RTF), define.xml, the reviewer's guide, the analysis results as JSON, every program and the batch log, with a manifest (analysis.json). {p!.study === 'HRP-301' ? 'For HRP-301 it is step 8 of the lifecycle journey on the pharmolecule hub, which checks it.' : ''}</p>
         <p className="text-[11px] text-lab-text-muted">FDA recommends Define-XML 2.1 for studies starting on or after 15 March 2023. Analysis results metadata are not part of Define-XML 2.1 itself, so they travel here as a reporting event shaped after the Analysis Results Standard.</p>
       </Panel>
+      <ImportResults />
     </div>
+  )
+}
+
+// Draw tables from an analysis results file alone (exported here or by another project).
+function ImportResults() {
+  const [data, setData] = useState<{ study: string; tables: ImportedTable[]; name: string } | null>(null)
+  const [sel, setSel] = useState('')
+  const [err, setErr] = useState('')
+  const load = async (f: File) => {
+    setErr('')
+    try { const r = ardFromReportingEvent(JSON.parse(await f.text())); if (!PACKS[r.study]) throw new Error(`No displays for study ${r.study}.`); setData({ ...r, name: f.name }); setSel(r.tables.find((t) => PACKS[r.study].displays[t.id])?.id ?? '') } catch (e) { setErr((e as Error).message); setData(null) }
+  }
+  const pack = data ? PACKS[data.study] : null
+  const t = data?.tables.find((x) => x.id === sel)
+  const d = t && pack?.displays[t.id] ? pack.displays[t.id](t.frame) : null
+  return (
+    <Panel title="Draw tables from an analysis results file" sub="Metadata-driven displays: load an analysis results JSON (the reporting event above) and each table is rebuilt from the results and metadata in the file alone, without running any program. Drawn this way, a table is identical to the one drawn from the program output; the tests check that for every table.">
+      <input type="file" accept=".json,application/json" aria-label="Analysis results JSON file" className="text-xs" onChange={(e) => e.target.files?.[0] && load(e.target.files[0])} />
+      {err && <p role="alert" className="text-xs text-lab-red">{err}</p>}
+      {data && pack && <>
+        <p className="text-xs text-lab-text-muted">{data.name}: study {data.study}, {data.tables.length} analyses, {data.tables.reduce((n, x) => n + x.frame.rows.length, 0)} results.</p>
+        <div className="flex flex-wrap gap-1">{data.tables.filter((x) => pack.displays[x.id]).map((x) => <Btn key={x.id} className="py-0.5" tone={sel === x.id ? 'solid' : 'grey'} onClick={() => setSel(x.id)}>{x.id}</Btn>)}</div>
+        {d && <div className="space-y-2">
+          <div className="overflow-x-auto bg-white text-slate-900 rounded p-3">
+            <p className="text-xs font-mono font-bold">{d.title}</p><p className="text-[11px] font-mono">{d.population}</p>
+            <table className="w-full text-xs font-mono mt-1"><thead><tr className="border-y border-slate-800"><th className="text-left p-1" />{d.head.map((h) => <th key={h} className="p-1">{h}</th>)}</tr></thead>
+              <tbody>{d.rows.map((r, i) => <tr key={i}><td className={`p-1 ${r.indent ? 'pl-6' : ''}`}>{r.label}</td>{r.cells.map((c, j) => <td key={j} className="p-1 text-center">{c.text}</td>)}</tr>)}</tbody></table>
+            {d.footnotes.map((x) => <p key={x} className="text-[11px] mt-1">{x}</p>)}
+          </div>
+          <Btn tone="grey" onClick={() => download(`${t!.id.toLowerCase()}-from-results.rtf`, displayRtf(d, data.study), 'application/rtf')}>RTF</Btn>
+        </div>}
+      </>}
+    </Panel>
   )
 }

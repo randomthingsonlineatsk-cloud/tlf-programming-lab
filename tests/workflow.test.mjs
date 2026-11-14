@@ -129,3 +129,16 @@ test('HRP-301: the pack runs on a learner hand-off and its references self-match
   expect(HRP.programs.filter((p) => p.kind === 'dataset').flatMap((p) => checkDataset(p, r[p.id])).filter((x) => x.sev === 'Error')).toEqual([])
   w3.close()
 }, 300000)
+
+test('a table drawn from the exported analysis results file alone equals the one drawn from the program output', async () => {
+  const { ardFromReportingEvent } = await import('../src/domain/submission')
+  const ards = Object.fromEntries(GLV.programs.filter((p) => p.kind === 'ard').map((p) => [p.id, refs[p.id]]))
+  const file = JSON.parse(JSON.stringify(reportingEvent(GLV, ards, {})))
+  const back = ardFromReportingEvent(file)
+  expect(back.study).toBe('GLV-12-301')
+  for (const t of back.tables) {
+    expect(compareFrames(t.frame, refs[t.id], ['ANALYSIS', 'GROUP', 'CATEGORY', 'STAT']).ok, t.id).toBe(true)
+    expect(JSON.stringify(GLV.displays[t.id](t.frame))).toBe(JSON.stringify(GLV.displays[t.id](refs[t.id])))
+  }
+  expect(() => ardFromReportingEvent({ foo: 1 })).toThrow()
+})

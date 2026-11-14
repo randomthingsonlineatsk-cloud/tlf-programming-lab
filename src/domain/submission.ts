@@ -172,3 +172,20 @@ export function buildPackage(i: PackageInput, now = new Date()): { zip: Uint8Arr
   files['analysis.json'] = strToU8(JSON.stringify(manifest, null, 1))
   return { zip: zipSync(Object.fromEntries(Object.entries(files).map(([k, v]) => [k, [v, { level: 6, mtime: now }]]))), manifest }
 }
+
+// The other direction: rebuild the analysis results data of each table from a reporting event
+// file alone, so a display can be drawn from the metadata and results without the programs.
+export interface ImportedTable { id: string; title: string; frame: Frame }
+export function ardFromReportingEvent(re: unknown): { study: string; tables: ImportedTable[] } {
+  const r = re as { id?: string; analyses?: { id: string; name: string; methodId: string; results?: { operationId: string; analysis: string; category: string | null; resultGroups?: { groupName?: string }[]; rawValue: string | number | null }[] }[] }
+  if (!r || typeof r.id !== 'string' || !r.id.startsWith('RE_') || !Array.isArray(r.analyses)) throw new Error('This is not an analysis results file from the lab (a reporting event with analyses).')
+  const study = r.id.slice(3)
+  const tables = r.analyses.map((a) => {
+    const prefix = `${a.methodId}_`
+    return {
+      id: a.id.replace(/^AN_/, ''), title: a.name,
+      frame: { columns: ['ANALYSIS', 'GROUP', 'CATEGORY', 'STAT', 'VALUE'], rows: (a.results ?? []).map((x) => [x.analysis, x.resultGroups?.[0]?.groupName ?? null, x.category ?? null, x.operationId.startsWith(prefix) ? x.operationId.slice(prefix.length) : x.operationId, x.rawValue === null || x.rawValue === undefined ? null : String(x.rawValue)]) },
+    }
+  })
+  return { study, tables }
+}
