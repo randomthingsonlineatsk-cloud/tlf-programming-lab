@@ -1,5 +1,10 @@
 import { describe, it, expect } from 'vitest'
-import { createProject, recordRun, done, startMission, grade, submitMission, certificate, MISSIONS } from '../src/domain/lab'
+import { createProject, recordRun, done, startMission, grade, certificate, trackOf, markReady, qcOutput } from '../src/domain/lab'
+import { REVIEW_KEY } from '../src/domain/review'
+import { AI_ISSUES, AI_RECORD_FIELDS } from '../src/domain/aiwork'
+import { scanLog, headerMissing, headerTemplate } from '../src/domain/logscan'
+import { checkDataset } from '../src/domain/conform'
+import { sameAnswer } from '../src/domain/ir'
 import { FINDINGS } from '../src/domain/qc'
 import { ARS, arsScore } from '../src/domain/ars'
 import { compareFrames } from '../src/domain/compare'
@@ -37,21 +42,55 @@ describe('lab', () => {
     expect(arsScore(p.ars).right).toBe(8)
     expect(grade(p)!.score).toBe(100)
   })
-  it('certificate needs every mission passed and is stable', () => {
-    const ps = MISSIONS.map((m) => {
-      const p = startMission(m.id, 'expert')
-      m.programs.forEach((id) => pass(p, id))
-      p.qc = { compared: true, findings: FINDINGS.filter((f) => f.real).map((f) => f.id) }
-      p.ars = allArs(); p.runs.ADSL && (p.runs.ADSL.byVariable = {})
-      submitMission(p)
-      return p
-    })
-    expect(ps.every((p) => p.mission!.score === 100)).toBe(true)
-    const c = certificate(ps, 'L-1', 'Ada')
+  it('certificate needs the core missions and three workflow missions', () => {
+    const passed = (id: string, level: 'expert' | 'standard' = 'expert') => { const p = startMission(id, level); p.mission!.endedUtc = '2026-11-14T00:00:00Z'; p.mission!.score = 90; return p }
+    const core = ['M1', 'M2', 'M3', 'M4', 'M5'].map((id) => passed(id))
+    expect(certificate(core, 'L-1', 'Ada').eligible).toBe(false)
+    const c = certificate([...core, passed('M6'), passed('M7'), passed('M8')], 'L-1', 'Ada')
     expect(c.eligible).toBe(true)
-    expect(c.distinction).toBe(true)
+    expect(c.distinction).toBe(false)
     expect(c.code).toMatch(/^TLF-[0-9A-Z]{5}-[0-9A-Z]{5}$/)
-    expect(certificate(ps.slice(1), 'L-1', 'Ada').eligible).toBe(false)
+    expect(certificate([...core, passed('M6'), passed('M7'), passed('M8'), passed('M9'), passed('M10')], 'L-1', 'Ada').distinction).toBe(true)
+    expect(certificate([...core.slice(1), passed('M6'), passed('M7'), passed('M8')], 'L-1', 'Ada').eligible).toBe(false)
+  })
+  it('workflow missions grade their goals', () => {
+    const p = startMission('M8', 'standard')
+    for (const k of REVIEW_KEY) p.review.marks[k.line] = k.cat
+    expect(grade(p)!.score).toBe(100)
+    p.review.marks[1] = 'hard'
+    expect(grade(p)!.score).toBe(80)
+    const a = startMission('M7', 'standard')
+    a.ai.issues = AI_ISSUES.filter((i) => i.real).map((i) => i.id); a.ai.matched = true
+    expect(grade(a)!.score).toBe(80)
+    for (const f of AI_RECORD_FIELDS) a.ai.record[f.id] = 'A sentence long enough to count as a record entry.'
+    expect(grade(a)!.score).toBe(100)
+    const m10 = startMission('M10', 'guided')
+    expect(m10.cut).toEqual({ phase: 'dry', transfer: 1 })
+  })
+  it('tracker: ready, QC, validated, and back to development when the code changes', () => {
+    const p = createProject('t')
+    expect(trackOf(p, 'ADSL').status).toBe('Not started')
+    p.code.ADSL += '\n# change'
+    expect(trackOf(p, 'ADSL').status).toBe('In development')
+    markReady(p, 'ADSL')
+    qcOutput(p, 'ADSL', true)
+    expect(trackOf(p, 'ADSL').status).toBe('QC issues')
+    pass(p, 'ADSL'); qcOutput(p, 'ADSL', true)
+    expect(trackOf(p, 'ADSL').status).toBe('Validated')
+    p.code.ADSL += '\n# again'
+    expect(trackOf(p, 'ADSL').status).toBe('In development')
+  })
+  it('log scan and conformance checks', () => {
+    expect(scanLog({ ok: true, output: [{ type: 'warning', text: 'NAs introduced by coercion' }], rows: 3 }, 'x <- 1').map((l) => l.level)).toEqual(['WARNING', 'NOTE'])
+    expect(headerMissing(headerTemplate('a.R', 'p', ['dm'], 'adsl'))).toEqual([])
+    const f = { columns: ['STUDYID', 'USUBJID', 'PARAMCD', 'PARAM', 'AVAL', 'BASE', 'CHG', 'ABLFL', 'SAFFL'], rows: [['S', '1', 'X', 'x', '5', '5', null, 'Y', 'Y'], ['S', '1', 'X', 'x', '7', '5', '1', null, 'Q']] }
+    const rules = checkDataset({ output: 'advs', keys: ['USUBJID', 'PARAMCD'] } as never, f).map((x) => x.rule)
+    expect(rules).toEqual(expect.arrayContaining(['LAB-AD04', 'LAB-AD05', 'LAB-AD09']))
+  })
+  it('answers to information requests compare as numbers or as sets', () => {
+    expect(sameAnswer('numbers', ['1.0000001'], ['1'])).toBe(true)
+    expect(sameAnswer('numbers', ['1.01'], ['1'])).toBe(false)
+    expect(sameAnswer('ids', ['B', 'A'], ['A', 'B'])).toBe(true)
   })
   it('compare reports missing variables, rows and differing values', () => {
     const want = { columns: ['K', 'A'], rows: [['1', '0.1'], ['2', 'x']] }

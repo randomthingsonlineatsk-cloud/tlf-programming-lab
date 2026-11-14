@@ -10,26 +10,34 @@ import Data from './views/Data'
 import Qc from './views/Qc'
 import Metadata from './views/Metadata'
 import Missions from './views/Missions'
+import Runs from './views/Runs'
+import Submission from './views/Submission'
+import Requests from './views/Requests'
+import AiDraft from './views/AiDraft'
+import Review from './views/Review'
+import { cutKey } from './domain/cut'
 
-export type View = 'home' | 'learn' | 'programs' | 'data' | 'qc' | 'metadata' | 'missions'
+export type View = 'home' | 'learn' | 'programs' | 'data' | 'runs' | 'qc' | 'metadata' | 'submission' | 'ir' | 'ai' | 'review' | 'missions'
 interface Nav { view: View; arg?: string; go: (v: View, arg?: string) => void }
 const NavCtx = createContext<Nav>({ view: 'home', go: () => {} })
 export const useNav = () => useContext(NavCtx)
 
-const VIEWS: { id: View; label: string; project?: boolean }[] = [
+const VIEWS: { id: View; label: string; project?: boolean; glv?: boolean }[] = [
   { id: 'home', label: 'Home' }, { id: 'learn', label: 'Learn' }, { id: 'programs', label: 'Programs', project: true }, { id: 'data', label: 'Data', project: true },
-  { id: 'qc', label: 'Independent QC', project: true }, { id: 'metadata', label: 'Results metadata', project: true }, { id: 'missions', label: 'Missions & certificate' },
+  { id: 'runs', label: 'Runs & tracker', project: true }, { id: 'qc', label: 'Independent QC', project: true, glv: true }, { id: 'metadata', label: 'Results metadata', project: true, glv: true },
+  { id: 'submission', label: 'Submission', project: true }, { id: 'ir', label: 'Agency requests', project: true, glv: true }, { id: 'ai', label: 'AI draft', project: true, glv: true },
+  { id: 'review', label: 'Code review', project: true, glv: true }, { id: 'missions', label: 'Missions & certificate' },
 ]
 
 function useR() {
   const { p } = useStore()
   const [s, setS] = useState({ phase: 'idle', text: 'R not started' })
   useEffect(() => onStatus(setS), [])
-  const key = p ? `${p.id}|${p.handoffName ?? 'shipped'}` : ''
+  const key = p ? `${p.id}|${p.handoffName ?? 'shipped'}|${cutKey(p.cut)}` : ''
   useEffect(() => {
     if (!p) return
     const zip = p.handoffZip ? async () => p.handoffZip! : shippedZip
-    ensure(key, zip).catch(() => {})
+    ensure(key, zip, p.cut).catch(() => {})
   }, [key]) // eslint-disable-line react-hooks/exhaustive-deps
   return s
 }
@@ -39,10 +47,14 @@ function Shell() {
   const [nav, setNav] = useState<{ view: View; arg?: string }>({ view: 'home' })
   const go = (view: View, arg?: string) => { setNav({ view, arg }); window.scrollTo({ top: 0 }) }
   const r = useR()
-  const view = !p && VIEWS.find((v) => v.id === nav.view)?.project ? 'home' : nav.view
+  const glv = p?.study === 'GLV-12-301'
+  const allowed = (v: { project?: boolean; glv?: boolean }) => (!v.project || !!p) && (!v.glv || glv)
+  const view = allowed(VIEWS.find((v) => v.id === nav.view) ?? {}) ? nav.view : 'home'
   const ready = r.phase === 'ready'
   const k = `${view}|${nav.arg ?? ''}`
-  const el = view === 'home' ? <Home key={k} /> : view === 'learn' ? <Learn key={k} /> : view === 'programs' ? <Programs key={k} ready={ready} /> : view === 'data' ? <Data key={k} ready={ready} /> : view === 'qc' ? <Qc key={k} ready={ready} /> : view === 'metadata' ? <Metadata key={k} /> : <Missions key={k} />
+  const el = view === 'home' ? <Home key={k} /> : view === 'learn' ? <Learn key={k} /> : view === 'programs' ? <Programs key={k} ready={ready} /> : view === 'data' ? <Data key={k} ready={ready} />
+    : view === 'runs' ? <Runs key={k} ready={ready} /> : view === 'qc' ? <Qc key={k} ready={ready} /> : view === 'metadata' ? <Metadata key={k} /> : view === 'submission' ? <Submission key={k} ready={ready} />
+    : view === 'ir' ? <Requests key={k} ready={ready} /> : view === 'ai' ? <AiDraft key={k} ready={ready} /> : view === 'review' ? <Review key={k} ready={ready} /> : <Missions key={k} />
   return (
     <NavCtx.Provider value={{ view, arg: nav.arg, go }}>
       <div className="min-h-screen bg-lab-bg text-lab-text flex flex-col">
@@ -58,7 +70,7 @@ function Shell() {
             </div>
           </div>
           <nav className="max-w-7xl mx-auto px-4 flex flex-wrap gap-1" aria-label="Main">
-            {VIEWS.filter((v) => p || !v.project).map((v) => (
+            {VIEWS.filter(allowed).map((v) => (
               <button key={v.id} onClick={() => go(v.id)} aria-current={view === v.id ? 'page' : undefined}
                 className={`px-3 py-1.5 font-mono text-xs border-b-2 ${view === v.id ? 'border-lab-fda text-lab-fda' : 'border-transparent text-lab-text-muted hover:text-lab-text'}`}>{v.label}</button>
             ))}

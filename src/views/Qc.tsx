@@ -5,7 +5,7 @@ import { PROD_T2, FINDINGS } from '../domain/qc'
 import { compareFrames, type Comparison } from '../domain/compare'
 import { done } from '../domain/lab'
 import { production } from '../rclient'
-import { lastFrame } from './Programs'
+import { lastFrame } from '../session'
 import { Btn, Panel, Pill, Table } from './ui'
 
 // Independent QC of Table 14.3.1: compare the learner's QC output (T2) with production's.
