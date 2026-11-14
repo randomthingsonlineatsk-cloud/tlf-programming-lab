@@ -30,7 +30,8 @@ hand eczema), the study of the pharmolecule lifecycle journey, from the learner'
   and a comparison of outputs across runs.
 - **Submission**: ADaM conformance checks, define.xml (Define-XML 2.1), the analysis data
   reviewer's guide (PHUSE template sections), analysis results as JSON shaped after CDISC's
-  Analysis Results Standard, and an analysis package that the hub's lifecycle journey checks.
+  Analysis Results Standard, tables redrawn from that file alone (metadata-driven displays), and an
+  analysis package that the hub's lifecycle journey checks.
 - **Agency information requests**, **validating an AI-written program** (with a model card and an
   AI use record), and a **code review** done without running the code.
 - **Optional package mode**: installs webR builds of packages (pharmaverse and others) on request.
