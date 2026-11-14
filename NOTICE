@@ -1,0 +1,21 @@
+TLF Programming Lab
+Copyright 2026 Khan Gulrez Shagufa Fazal Ahmed
+
+Licensed under the Apache License, Version 2.0.
+
+This is a training app. The study GLV-12-301, the drug GLV-12, its sponsor, the sites, the
+participants and all data are fictional. Any resemblance to real studies, products,
+organisations or people is coincidental. The app is not a validated system and must not hold
+real patient data. Everything runs in the browser; nothing is sent to a server.
+
+CDISC ADaM, ADaMIG, SDTM, Dataset-JSON and the Analysis Results Standard are standards
+published by CDISC (cdisc.org). Names, dataset and variable names are used as CDISC publishes
+them, for education. MedDRA terms in the data are fictional look-alikes.
+
+Third-party software
+- webR (https://github.com/r-wasm/webr), MIT licence, is the WebAssembly build of R used to run
+  R in the browser. The site serves the webR runtime unchanged from the webr npm package; it
+  contains R and its base and recommended packages, which are licensed under the GNU General
+  Public License, version 2 or later. The R sources are available from https://cran.r-project.org
+  and the webR build sources from the webR repository.
+- React, CodeMirror (MIT), fflate (MIT) and Tailwind CSS (MIT) are used under their licences.
