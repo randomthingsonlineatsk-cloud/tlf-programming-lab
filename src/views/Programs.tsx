@@ -11,6 +11,7 @@ import { lastResults, runOne } from '../session'
 import { headerTemplate, scanLog } from '../domain/logscan'
 import { TRACERS } from '../domain/trace'
 import { download } from '../domain/store'
+import { estimandFor, type EstimandLink } from '../domain/packs/estimands'
 import Editor from './Editor'
 import Trace from './Trace'
 import { Btn, Panel, Pill, Table, Tabs } from './ui'
@@ -83,6 +84,7 @@ function Workspace({ prog, ready }: { prog: Program; ready: boolean }) {
         <p className="text-[11px] text-lab-text-muted">Your program must create <code className="font-mono">{prog.output}</code>. Available: the SDTM datasets{prog.needs.length ? ` and the validated ${prog.needs.map((n) => pack.programs.find((q) => q.id === n)!.output).join(', ')}` : ''}; base R and the lab library (lab_mmrm, lab_estimate, lab_cox){p!.packages.length ? `; installed packages: ${p!.packages.join(', ')}` : ''}.</p>
       </Panel>
       <Tabs tabs={[{ id: 'spec', label: 'Specification' }, ...(refDisplay ? [{ id: 'shell' as const, label: 'Mock shell' }] : []), { id: 'console', label: `Console${log.some((l) => l.level !== 'NOTE') ? ' ⚠' : ''}` }, { id: 'compare', label: 'Compare with reference' }, { id: 'output', label: `Output (${r?.res.frame?.rows.length ?? 0})` }, ...(pack.displays[prog.id] || prog.kind === 'figure' ? [{ id: 'display' as const, label: prog.kind === 'figure' ? 'Figure' : 'Display' }] : [])]} value={tab} onChange={setTab} />
+      {tab === 'spec' && estimandFor(pack.id, prog.id) && <EstimandBox e={estimandFor(pack.id, prog.id)!} />}
       {tab === 'spec' && <Panel title="Specification"><Table head={['Variable', 'Label', 'Derivation']} rows={prog.spec.map((s) => [<span className="font-mono">{s.name}</span>, s.label, s.derivation])} /><p className="text-xs text-lab-text-muted">Key for comparison: {prog.keys.join(', ')}.</p></Panel>}
       {tab === 'shell' && refDisplay && <Shell d={refDisplay} note={prog.shell} />}
       {tab === 'console' && <Console res={r?.res} log={log} />}
@@ -192,5 +194,16 @@ function DisplayView({ id, d, study, shell }: { id: string; d: Display; study: s
       </Panel>
       {sel && tracer && <Trace id={id} sel={sel} onClose={() => setSel(null)} />}
     </div>
+  )
+}
+
+// The estimand from the protocol, beside the program that estimates it (ICH E9(R1)).
+function EstimandBox({ e }: { e: EstimandLink }) {
+  const x = e.estimand
+  return (
+    <Panel title={`Estimand ${x.id} (${x.endpoint.toLowerCase()}), from the protocol`} sub={e.role}>
+      <Table head={['Attribute', 'Protocol text']} rows={[['Population', x.population], ['Treatment', x.treatment], ['Variable', x.variable],
+        ...x.events.map((i) => [`Intercurrent event: ${i.name}`, <span><b>{i.strategy}.</b> {i.handling}</span>]), ['Population-level summary', x.summary], ['Main estimator', x.estimator]]} />
+    </Panel>
   )
 }
