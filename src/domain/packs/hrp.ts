@@ -28,6 +28,11 @@ adsl$TRTDURD <- as.numeric(adsl$TRTEDT - adsl$TRTSDT) + 1
 adsl$RANDFL  <- ifelse(!is.na(dm$ARMCD), "Y", "N")
 adsl$ITTFL   <- adsl$RANDFL
 adsl$SAFFL   <- ifelse(adsl$RANDFL == "Y" & !is.na(adsl$TRTSDT), "Y", "N")
+disp <- ds[ds$DSCAT == "DISPOSITION EVENT", ]
+i <- match(adsl$USUBJID, disp$USUBJID)
+adsl$EOSSTT  <- ifelse(disp$DSDECOD[i] == "COMPLETED", "COMPLETED", "DISCONTINUED")
+adsl$DCSREAS <- ifelse(disp$DSDECOD[i] == "COMPLETED", NA, disp$DSDECOD[i])
+adsl$EOSDT   <- as.Date(substr(disp$DSSTDTC[i], 1, 10))
 bl <- qs[qs$QSLOBXFL %in% "Y", ]
 b <- function(cd) bl$QSSTRESN[bl$QSTESTCD == cd][match(adsl$USUBJID, bl$USUBJID[bl$QSTESTCD == cd])]
 adsl$HECSIBL <- b("HECSI01")
@@ -98,13 +103,14 @@ const respSpec = (what: string) => [...ARD_SPEC,
   { name: 'Results', label: '', derivation: 'Per TRT01P: N, RESP n and pct, MISS n. For each dose: DIFF est, lcl, ucl in percentage points (Wald: p1 - p0 ± 1.96 √(p1(1-p1)/n1 + p0(1-p0)/n0)) and p from fisher.test() on the 2 × 2 table of responders against placebo.' }]
 
 export const HRP_PROGRAMS: Program[] = [
-  { ...glv('ADSL'), reference: ADSL, intro: 'One record per screened participant: treatment variables, dates, population flags and the baseline scores (HECSI, IGA-CHE, itch) from QS. The hand-off has no DS dataset, so disposition is not derived here. Inputs: dm, qs.',
+  { ...glv('ADSL'), reference: ADSL, intro: 'One record per screened participant: treatment variables, dates, population flags disposition from DS, and the baseline scores (HECSI, IGA-CHE, itch) from QS. Inputs: dm, ds, qs.',
     spec: [
       { name: 'STUDYID, USUBJID, SUBJID, SITEID, AGE, AGEU, SEX, RACE, COUNTRY', label: 'From DM', derivation: 'Copied from DM.' },
       { name: 'AGEGR1 / AGEGR1N', label: 'Pooled age group 1', derivation: '"<65" (1) when AGE < 65, otherwise ">=65" (2).' },
       { name: 'TRT01P(N) / TRT01A(N)', label: 'Planned and actual treatment', derivation: 'DM.ARM and DM.ACTARM; N: Placebo 1, Lumiravostat 10 mg 2, Lumiravostat 25 mg 3.' },
       { name: 'TRTSDT, TRTEDT, TRTDURD', label: 'Dosing dates and duration', derivation: 'Date parts of RFXSTDTC and RFXENDTC; TRTEDT - TRTSDT + 1.' },
       { name: 'RANDFL, ITTFL, SAFFL', label: 'Population flags', derivation: 'As in GLV-12-301: randomised when ARMCD is present; ITT = randomised; safety = randomised and dosed.' },
+      { name: 'EOSSTT / DCSREAS / EOSDT', label: 'End of study status, reason and date', derivation: 'From the DS record with DSCAT "DISPOSITION EVENT": "COMPLETED" when DSDECOD is COMPLETED, else "DISCONTINUED" with DCSREAS = DSDECOD (NA when completed); EOSDT = date part of its DSSTDTC. Screen failures are "DISCONTINUED" with DCSREAS "SCREEN FAILURE" and are not randomised.' },
       { name: 'HECSIBL, IGABL, ITCHBL', label: 'Baseline scores', derivation: 'QSSTRESN on the QS record with QSLOBXFL "Y" for QSTESTCD HECSI01, IGACHE01, ITCH01.' },
     ],
     starter: '# Build adsl from dm and qs.\n\nadsl <- data.frame(USUBJID = dm$USUBJID, stringsAsFactors = FALSE)\n\n' },
@@ -132,6 +138,12 @@ export const HRP_PROGRAMS: Program[] = [
     intro: 'The proportion of participants with at least a 75% improvement in HECSI at Week 16, analysed as the primary endpoint.',
     spec: respSpec('HECSI-75 (PARAMCD "HECSI")'), starter: '# HECSI-75 responders at Week 16.\n\n', reference: resp('HECSI', 'ard_t4') },
   { ...glv('L1') },
+  { ...glv('T4'), id: 'T5', output: 'ard_t5', reference: swap(glv('T4').reference).replace('ard_t4 <-', 'ard_t5 <-'),
+    shell: 'Screened; Screen failures; Randomised (N); Treated; Completed the study; Discontinued from the study; Primary reason: one row per reason. Columns: Placebo, Lumiravostat 10 mg, Lumiravostat 25 mg, Total. n (%), % of randomised.' },
+  { ...glv('T5'), id: 'T6', output: 'ard_t6',
+    intro: 'Duration of treatment (TRTDURD): n, mean, SD, median, min, max; duration categories for a 16-week study; total exposure in participant-years.',
+    spec: [{ name: 'Analyses', label: '', derivation: 'POP (N); DUR (n, mean, sd, median, min, max of TRTDURD); DURCAT with categories "1-28 days", "29-56 days", "57-84 days", ">84 days" (n, pct); PYEARS est = sum(TRTDURD) / 365.25.' }],
+    reference: swap(glv('T5').reference).replace('ard_t5 <-', 'ard_t6 <-').replace('c("1-28 days", "29-84 days", "85-182 days", ">182 days")', 'c("1-28 days", "29-56 days", "57-84 days", ">84 days")').replace('c(0, 28, 84, 182, Inf)', 'c(0, 28, 56, 84, Inf)') },
   { id: 'F1', title: 'Figure 14.2.3: mean percent change from baseline in HECSI by visit', kind: 'figure', area: 'Figures', output: 'f1', keys: ['TRT01P', 'AVISITN'], ref: 'SAP 9.4.2', needs: ['ADSL', 'ADQS'],
     intro: 'Mean percent change from baseline in HECSI (with SE bars) at Weeks 2 to 16 by planned treatment, observed cases. Build f1 (TRT01P, AVISITN, MEAN, SE) and draw the plot from it.',
     spec: [{ name: 'f1', label: 'Plotted data', derivation: 'One row per TRT01P and AVISITN > 0 for PARAMCD "HECSI": MEAN = mean(PCHG), SE = sd(PCHG) / sqrt(n).' }, { name: 'Plot', label: '', derivation: 'Lines with points by treatment, ±1 SE error bars, a reference line at 0, labels and a legend.' }],

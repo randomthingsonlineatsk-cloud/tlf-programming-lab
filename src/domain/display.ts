@@ -220,6 +220,7 @@ export const hrpDisplays = (groups: string[]): Record<string, (f: Frame) => Disp
   T1: demographics(groups), T2: aeTable(groups),
   T3: responder(groups, 'Table 14.2.1 IGA-CHE treatment success at Week 16', 'IGA-CHE treatment success'),
   T4: responder(groups, 'Table 14.2.2 HECSI-75 at Week 16', 'HECSI-75 response'),
+  T5: disposition(groups), T6: exposure(groups),
 })
 
 const h = (s: unknown) => String(s ?? '').replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]!))
