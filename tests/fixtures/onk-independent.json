@@ -1,0 +1,4932 @@
+{
+ "format": "csr-studio/study-outputs",
+ "schema": 1,
+ "study": "ONK-44-302",
+ "title": "A randomised, open-label, phase 3 study of ONK-44 versus docetaxel in adults with advanced non-small cell lung cancer after one prior platinum-based chemotherapy",
+ "short": "ONK-44 versus docetaxel, NSCLC, second line",
+ "sap": "SAP v1.0",
+ "groups": [
+  "ONK-44 400 mg",
+  "Docetaxel"
+ ],
+ "source": "Derived from the SDTM Mapping Trainer’s ONK-44-302 SDTM by scripts/make-onk-44-302.mjs (fictional)",
+ "outputs": [
+  {
+   "id": "ADSL",
+   "title": "ADSL: subject-level analysis dataset",
+   "kind": "dataset",
+   "area": "Data",
+   "ref": "ADaMIG v1.3 section 3",
+   "shell": "",
+   "frame": {
+    "columns": [
+     "USUBJID",
+     "SITEID",
+     "AGE",
+     "AGEGR1",
+     "SEX",
+     "RACE",
+     "COUNTRY",
+     "TRT01P",
+     "TRT01A",
+     "RANDDT",
+     "TRTSDT",
+     "TRTEDT",
+     "TRTDURD",
+     "ITTFL",
+     "SAFFL",
+     "DTHFL",
+     "DTHDT",
+     "LSTALVDT"
+    ],
+    "rows": [
+     [
+      "ONK-44-302-401-001",
+      "401",
+      "67",
+      ">=65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-01-06",
+      "2026-01-07",
+      "2026-04-22",
+      "126",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-17"
+     ],
+     [
+      "ONK-44-302-401-002",
+      "401",
+      "57",
+      "<65",
+      "F",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-01-09",
+      "2026-01-10",
+      "2026-08-09",
+      "212",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-14"
+     ],
+     [
+      "ONK-44-302-401-005",
+      "401",
+      "49",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-01-15",
+      "2026-01-16",
+      "2026-05-21",
+      "126",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-22"
+     ],
+     [
+      "ONK-44-302-401-007",
+      "401",
+      "70",
+      ">=65",
+      "M",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-01-24",
+      "2026-01-25",
+      "2026-08-26",
+      "214",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-11"
+     ],
+     [
+      "ONK-44-302-401-008",
+      "401",
+      "47",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-01-25",
+      "2026-01-26",
+      "2026-07-14",
+      "170",
+      "Y",
+      "Y",
+      "Y",
+      "2026-09-19",
+      "2026-09-19"
+     ],
+     [
+      "ONK-44-302-401-010",
+      "401",
+      "62",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-02-01",
+      "2026-02-02",
+      "2026-10-31",
+      "272",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-31"
+     ],
+     [
+      "ONK-44-302-401-011",
+      "401",
+      "52",
+      "<65",
+      "F",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-02-04",
+      "2026-02-05",
+      "2026-06-12",
+      "128",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-23"
+     ],
+     [
+      "ONK-44-302-401-014",
+      "401",
+      "46",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-02-12",
+      "2026-02-13",
+      "2026-08-21",
+      "210",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-13"
+     ],
+     [
+      "ONK-44-302-401-016",
+      "401",
+      "68",
+      ">=65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-02-20",
+      "2026-02-21",
+      "2026-07-18",
+      "168",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-15"
+     ],
+     [
+      "ONK-44-302-401-017",
+      "401",
+      "60",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-02-22",
+      "2026-02-23",
+      "2026-09-22",
+      "212",
+      "Y",
+      "Y",
+      "Y",
+      "2026-10-14",
+      "2026-10-14"
+     ],
+     [
+      "ONK-44-302-401-019",
+      "401",
+      "56",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-03-02",
+      "2026-03-03",
+      "2026-10-02",
+      "214",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-30"
+     ],
+     [
+      "ONK-44-302-401-020",
+      "401",
+      "46",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-03-05",
+      "2026-03-06",
+      "2026-07-10",
+      "147",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-28"
+     ],
+     [
+      "ONK-44-302-401-023",
+      "401",
+      "77",
+      ">=65",
+      "F",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-03-10",
+      "2026-03-11",
+      "2026-10-07",
+      "231",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-17"
+     ],
+     [
+      "ONK-44-302-401-025",
+      "401",
+      "71",
+      ">=65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-03-18",
+      "2026-03-19",
+      "2026-08-13",
+      "168",
+      "Y",
+      "Y",
+      "Y",
+      "2026-10-21",
+      "2026-10-21"
+     ],
+     [
+      "ONK-44-302-401-026",
+      "401",
+      "48",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-03-20",
+      "2026-03-21",
+      "2026-10-17",
+      "231",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-29"
+     ],
+     [
+      "ONK-44-302-401-028",
+      "401",
+      "59",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-03-28",
+      "2026-03-29",
+      "2026-07-12",
+      "126",
+      "Y",
+      "Y",
+      "Y",
+      "2026-10-08",
+      "2026-10-08"
+     ],
+     [
+      "ONK-44-302-401-031",
+      "401",
+      "58",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-04-05",
+      "2026-04-06",
+      "2026-10-12",
+      "210",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-31"
+     ],
+     [
+      "ONK-44-302-401-032",
+      "401",
+      "50",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-04-08",
+      "2026-04-09",
+      "2026-09-03",
+      "168",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-16"
+     ],
+     [
+      "ONK-44-302-401-034",
+      "401",
+      "61",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-04-15",
+      "2026-04-16",
+      "2026-09-10",
+      "168",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-22"
+     ],
+     [
+      "ONK-44-302-401-035",
+      "401",
+      "51",
+      "<65",
+      "M",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-04-19",
+      "2026-04-20",
+      "2026-07-05",
+      "77",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-23"
+     ],
+     [
+      "ONK-44-302-401-038",
+      "401",
+      "70",
+      ">=65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-04-24",
+      "2026-04-25",
+      "2026-10-10",
+      "189",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-10"
+     ],
+     [
+      "ONK-44-302-401-040",
+      "401",
+      "57",
+      "<65",
+      "F",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-05-01",
+      "2026-05-02",
+      "2026-10-17",
+      "189",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-26"
+     ],
+     [
+      "ONK-44-302-401-041",
+      "401",
+      "77",
+      ">=65",
+      "M",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-05-05",
+      "2026-05-06",
+      "2026-07-29",
+      "105",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-23"
+     ],
+     [
+      "ONK-44-302-401-043",
+      "401",
+      "68",
+      ">=65",
+      "F",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-05-10",
+      "2026-05-11",
+      "2026-08-24",
+      "126",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-27"
+     ],
+     [
+      "ONK-44-302-401-044",
+      "401",
+      "50",
+      "<65",
+      "F",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-05-14",
+      "2026-05-15",
+      "2026-10-31",
+      "170",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-31"
+     ],
+     [
+      "ONK-44-302-401-046",
+      "401",
+      "77",
+      ">=65",
+      "F",
+      "ASIAN",
+      "IND",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-05-17",
+      "2026-05-18",
+      "2026-10-12",
+      "168",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-28"
+     ],
+     [
+      "ONK-44-302-401-047",
+      "401",
+      "48",
+      "<65",
+      "F",
+      "ASIAN",
+      "IND",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-05-23",
+      "2026-05-24",
+      "2026-09-26",
+      "126",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-28"
+     ],
+     [
+      "ONK-44-302-402-003",
+      "402",
+      "62",
+      "<65",
+      "M",
+      "ASIAN",
+      "GBR",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-01-11",
+      "2026-01-12",
+      "2026-06-08",
+      "168",
+      "Y",
+      "Y",
+      "Y",
+      "2026-08-01",
+      "2026-08-01"
+     ],
+     [
+      "ONK-44-302-402-006",
+      "402",
+      "47",
+      "<65",
+      "M",
+      "ASIAN",
+      "GBR",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-01-19",
+      "2026-01-20",
+      "2026-07-04",
+      "166",
+      "Y",
+      "Y",
+      "Y",
+      "2026-09-09",
+      "2026-09-09"
+     ],
+     [
+      "ONK-44-302-402-009",
+      "402",
+      "60",
+      "<65",
+      "F",
+      "WHITE",
+      "GBR",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-01-28",
+      "2026-01-29",
+      "2026-08-06",
+      "210",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-28"
+     ],
+     [
+      "ONK-44-302-402-012",
+      "402",
+      "55",
+      "<65",
+      "M",
+      "ASIAN",
+      "GBR",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-02-08",
+      "2026-02-09",
+      "2026-10-31",
+      "265",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-31"
+     ],
+     [
+      "ONK-44-302-402-015",
+      "402",
+      "69",
+      ">=65",
+      "M",
+      "WHITE",
+      "GBR",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-02-14",
+      "2026-02-15",
+      "2026-10-31",
+      "259",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-31"
+     ],
+     [
+      "ONK-44-302-402-018",
+      "402",
+      "72",
+      ">=65",
+      "M",
+      "WHITE",
+      "GBR",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-02-27",
+      "2026-02-28",
+      "2026-10-17",
+      "252",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-26"
+     ],
+     [
+      "ONK-44-302-402-021",
+      "402",
+      "57",
+      "<65",
+      "M",
+      "BLACK OR AFRICAN AMERICAN",
+      "GBR",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-03-08",
+      "2026-03-09",
+      "2026-07-13",
+      "147",
+      "Y",
+      "Y",
+      "Y",
+      "2026-09-29",
+      "2026-09-29"
+     ],
+     [
+      "ONK-44-302-402-024",
+      "402",
+      "52",
+      "<65",
+      "M",
+      "WHITE",
+      "GBR",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-03-16",
+      "2026-03-17",
+      "2026-08-11",
+      "168",
+      "Y",
+      "Y",
+      "Y",
+      "2026-10-15",
+      "2026-10-15"
+     ],
+     [
+      "ONK-44-302-402-027",
+      "402",
+      "77",
+      ">=65",
+      "F",
+      "ASIAN",
+      "GBR",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-09-09",
+      "189",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-09-12"
+     ],
+     [
+      "ONK-44-302-402-030",
+      "402",
+      "74",
+      ">=65",
+      "M",
+      "WHITE",
+      "GBR",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-03-31",
+      "2026-04-01",
+      "2026-09-16",
+      "189",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-21"
+     ],
+     [
+      "ONK-44-302-402-033",
+      "402",
+      "69",
+      ">=65",
+      "M",
+      "ASIAN",
+      "GBR",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-04-12",
+      "2026-04-13",
+      "2026-07-12",
+      "91",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-17"
+     ],
+     [
+      "ONK-44-302-402-036",
+      "402",
+      "50",
+      "<65",
+      "M",
+      "ASIAN",
+      "GBR",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-04-21",
+      "2026-04-22",
+      "2026-10-07",
+      "169",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-07"
+     ],
+     [
+      "ONK-44-302-402-039",
+      "402",
+      "60",
+      "<65",
+      "F",
+      "ASIAN",
+      "GBR",
+      "Docetaxel",
+      "Docetaxel",
+      "2026-04-27",
+      "2026-04-28",
+      "2026-10-13",
+      "189",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-30"
+     ],
+     [
+      "ONK-44-302-402-042",
+      "402",
+      "50",
+      "<65",
+      "F",
+      "WHITE",
+      "GBR",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-05-07",
+      "2026-05-08",
+      "2026-10-31",
+      "177",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-31"
+     ],
+     [
+      "ONK-44-302-402-048",
+      "402",
+      "65",
+      ">=65",
+      "M",
+      "WHITE",
+      "GBR",
+      "ONK-44 400 mg",
+      "ONK-44 400 mg",
+      "2026-05-25",
+      "2026-05-26",
+      "2026-09-07",
+      "105",
+      "Y",
+      "Y",
+      "N",
+      "",
+      "2026-10-25"
+     ]
+    ]
+   },
+   "display": null
+  },
+  {
+   "id": "T1",
+   "title": "Table 14.1.1: disposition at the data cut-off (randomised participants)",
+   "kind": "ard",
+   "area": "Safety",
+   "ref": "SAP 9.1; ICH E3 section 10.1",
+   "shell": "Screened; screen failures; randomised; treated; on treatment at the cut-off; progression or death (independent review); died; alive at the cut-off.",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "SCREENED",
+      "Total",
+      null,
+      "n",
+      "48"
+     ],
+     [
+      "SCRFAIL",
+      "Total",
+      null,
+      "n",
+      "6"
+     ],
+     [
+      "POP",
+      "ONK-44 400 mg",
+      null,
+      "N",
+      "18"
+     ],
+     [
+      "POP",
+      "Docetaxel",
+      null,
+      "N",
+      "24"
+     ],
+     [
+      "POP",
+      "Total",
+      null,
+      "N",
+      "42"
+     ],
+     [
+      "TREATED",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "18"
+     ],
+     [
+      "TREATED",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "100"
+     ],
+     [
+      "TREATED",
+      "Docetaxel",
+      null,
+      "n",
+      "24"
+     ],
+     [
+      "TREATED",
+      "Docetaxel",
+      null,
+      "pct",
+      "100"
+     ],
+     [
+      "TREATED",
+      "Total",
+      null,
+      "n",
+      "42"
+     ],
+     [
+      "TREATED",
+      "Total",
+      null,
+      "pct",
+      "100"
+     ],
+     [
+      "PFSEVT",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "8"
+     ],
+     [
+      "PFSEVT",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "44.44444444444444"
+     ],
+     [
+      "PFSEVT",
+      "Docetaxel",
+      null,
+      "n",
+      "17"
+     ],
+     [
+      "PFSEVT",
+      "Docetaxel",
+      null,
+      "pct",
+      "70.83333333333333"
+     ],
+     [
+      "PFSEVT",
+      "Total",
+      null,
+      "n",
+      "25"
+     ],
+     [
+      "PFSEVT",
+      "Total",
+      null,
+      "pct",
+      "59.523809523809526"
+     ],
+     [
+      "DEATH",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "3"
+     ],
+     [
+      "DEATH",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "DEATH",
+      "Docetaxel",
+      null,
+      "n",
+      "5"
+     ],
+     [
+      "DEATH",
+      "Docetaxel",
+      null,
+      "pct",
+      "20.833333333333332"
+     ],
+     [
+      "DEATH",
+      "Total",
+      null,
+      "n",
+      "8"
+     ],
+     [
+      "DEATH",
+      "Total",
+      null,
+      "pct",
+      "19.047619047619047"
+     ],
+     [
+      "ALIVE",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "15"
+     ],
+     [
+      "ALIVE",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "83.33333333333333"
+     ],
+     [
+      "ALIVE",
+      "Docetaxel",
+      null,
+      "n",
+      "19"
+     ],
+     [
+      "ALIVE",
+      "Docetaxel",
+      null,
+      "pct",
+      "79.16666666666667"
+     ],
+     [
+      "ALIVE",
+      "Total",
+      null,
+      "n",
+      "34"
+     ],
+     [
+      "ALIVE",
+      "Total",
+      null,
+      "pct",
+      "80.95238095238095"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.1.1 Disposition at the data cut-off",
+    "population": "All randomised participants; data cut-off 2026-10-31",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "rows": [
+     {
+      "label": "Screened",
+      "cells": [
+       {
+        "text": "",
+        "keys": [
+         {
+          "an": "SCREENED",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "",
+        "keys": [
+         {
+          "an": "SCREENED",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "48",
+        "keys": [
+         {
+          "an": "SCREENED",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Screen failures",
+      "cells": [
+       {
+        "text": "",
+        "keys": [
+         {
+          "an": "SCRFAIL",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "",
+        "keys": [
+         {
+          "an": "SCRFAIL",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "6",
+        "keys": [
+         {
+          "an": "SCRFAIL",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Randomised",
+      "cells": [
+       {
+        "text": "18",
+        "keys": [
+         {
+          "an": "POP",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "24",
+        "keys": [
+         {
+          "an": "POP",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "42",
+        "keys": [
+         {
+          "an": "POP",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Treated",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "18 (100.0)",
+        "keys": [
+         {
+          "an": "TREATED",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "24 (100.0)",
+        "keys": [
+         {
+          "an": "TREATED",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "42 (100.0)",
+        "keys": [
+         {
+          "an": "TREATED",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Progressed or died (independent review)",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "8 (44.4)",
+        "keys": [
+         {
+          "an": "PFSEVT",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "17 (70.8)",
+        "keys": [
+         {
+          "an": "PFSEVT",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "25 (59.5)",
+        "keys": [
+         {
+          "an": "PFSEVT",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Died",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "3 (16.7)",
+        "keys": [
+         {
+          "an": "DEATH",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "5 (20.8)",
+        "keys": [
+         {
+          "an": "DEATH",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "8 (19.0)",
+        "keys": [
+         {
+          "an": "DEATH",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Alive at the data cut-off",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "15 (83.3)",
+        "keys": [
+         {
+          "an": "ALIVE",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "19 (79.2)",
+        "keys": [
+         {
+          "an": "ALIVE",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "34 (81.0)",
+        "keys": [
+         {
+          "an": "ALIVE",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "footnotes": [
+     "Screen failures did not reach randomisation. Data cut-off 2026-10-31."
+    ]
+   }
+  },
+  {
+   "id": "T2",
+   "title": "Table 14.1.2: demographics (intent-to-treat population)",
+   "kind": "ard",
+   "area": "Safety",
+   "ref": "SAP 9.2; ICH E3 section 11.2",
+   "shell": "Age; age group; sex; race; country.",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "AGE",
+      "ONK-44 400 mg",
+      null,
+      "mean",
+      "55.94444444444444"
+     ],
+     [
+      "AGE",
+      "ONK-44 400 mg",
+      null,
+      "sd",
+      "8.01815749865283"
+     ],
+     [
+      "AGE",
+      "Docetaxel",
+      null,
+      "mean",
+      "63.083333333333336"
+     ],
+     [
+      "AGE",
+      "Docetaxel",
+      null,
+      "sd",
+      "10.201946390024187"
+     ],
+     [
+      "AGE",
+      "Total",
+      null,
+      "mean",
+      "60.023809523809526"
+     ],
+     [
+      "AGE",
+      "Total",
+      null,
+      "sd",
+      "9.890838567714571"
+     ],
+     [
+      "AGE",
+      "ONK-44 400 mg",
+      null,
+      "median",
+      "53.5"
+     ],
+     [
+      "AGE",
+      "Docetaxel",
+      null,
+      "median",
+      "61.5"
+     ],
+     [
+      "AGE",
+      "Total",
+      null,
+      "median",
+      "59.5"
+     ],
+     [
+      "AGE",
+      "ONK-44 400 mg",
+      null,
+      "min",
+      "47"
+     ],
+     [
+      "AGE",
+      "ONK-44 400 mg",
+      null,
+      "max",
+      "70"
+     ],
+     [
+      "AGE",
+      "Docetaxel",
+      null,
+      "min",
+      "46"
+     ],
+     [
+      "AGE",
+      "Docetaxel",
+      null,
+      "max",
+      "77"
+     ],
+     [
+      "AGE",
+      "Total",
+      null,
+      "min",
+      "46"
+     ],
+     [
+      "AGE",
+      "Total",
+      null,
+      "max",
+      "77"
+     ],
+     [
+      "AGEGR1",
+      "ONK-44 400 mg",
+      "<65",
+      "n",
+      "14"
+     ],
+     [
+      "AGEGR1",
+      "ONK-44 400 mg",
+      "<65",
+      "pct",
+      "77.77777777777777"
+     ],
+     [
+      "AGEGR1",
+      "Docetaxel",
+      "<65",
+      "n",
+      "13"
+     ],
+     [
+      "AGEGR1",
+      "Docetaxel",
+      "<65",
+      "pct",
+      "54.166666666666664"
+     ],
+     [
+      "AGEGR1",
+      "Total",
+      "<65",
+      "n",
+      "27"
+     ],
+     [
+      "AGEGR1",
+      "Total",
+      "<65",
+      "pct",
+      "64.28571428571429"
+     ],
+     [
+      "AGEGR1",
+      "ONK-44 400 mg",
+      ">=65",
+      "n",
+      "4"
+     ],
+     [
+      "AGEGR1",
+      "ONK-44 400 mg",
+      ">=65",
+      "pct",
+      "22.22222222222222"
+     ],
+     [
+      "AGEGR1",
+      "Docetaxel",
+      ">=65",
+      "n",
+      "11"
+     ],
+     [
+      "AGEGR1",
+      "Docetaxel",
+      ">=65",
+      "pct",
+      "45.833333333333336"
+     ],
+     [
+      "AGEGR1",
+      "Total",
+      ">=65",
+      "n",
+      "15"
+     ],
+     [
+      "AGEGR1",
+      "Total",
+      ">=65",
+      "pct",
+      "35.714285714285715"
+     ],
+     [
+      "SEX",
+      "ONK-44 400 mg",
+      "F",
+      "n",
+      "5"
+     ],
+     [
+      "SEX",
+      "ONK-44 400 mg",
+      "F",
+      "pct",
+      "27.77777777777778"
+     ],
+     [
+      "SEX",
+      "Docetaxel",
+      "F",
+      "n",
+      "7"
+     ],
+     [
+      "SEX",
+      "Docetaxel",
+      "F",
+      "pct",
+      "29.166666666666668"
+     ],
+     [
+      "SEX",
+      "Total",
+      "F",
+      "n",
+      "12"
+     ],
+     [
+      "SEX",
+      "Total",
+      "F",
+      "pct",
+      "28.571428571428573"
+     ],
+     [
+      "SEX",
+      "ONK-44 400 mg",
+      "M",
+      "n",
+      "13"
+     ],
+     [
+      "SEX",
+      "ONK-44 400 mg",
+      "M",
+      "pct",
+      "72.22222222222223"
+     ],
+     [
+      "SEX",
+      "Docetaxel",
+      "M",
+      "n",
+      "17"
+     ],
+     [
+      "SEX",
+      "Docetaxel",
+      "M",
+      "pct",
+      "70.83333333333333"
+     ],
+     [
+      "SEX",
+      "Total",
+      "M",
+      "n",
+      "30"
+     ],
+     [
+      "SEX",
+      "Total",
+      "M",
+      "pct",
+      "71.42857142857143"
+     ],
+     [
+      "RACE",
+      "ONK-44 400 mg",
+      "ASIAN",
+      "n",
+      "15"
+     ],
+     [
+      "RACE",
+      "ONK-44 400 mg",
+      "ASIAN",
+      "pct",
+      "83.33333333333333"
+     ],
+     [
+      "RACE",
+      "Docetaxel",
+      "ASIAN",
+      "n",
+      "19"
+     ],
+     [
+      "RACE",
+      "Docetaxel",
+      "ASIAN",
+      "pct",
+      "79.16666666666667"
+     ],
+     [
+      "RACE",
+      "Total",
+      "ASIAN",
+      "n",
+      "34"
+     ],
+     [
+      "RACE",
+      "Total",
+      "ASIAN",
+      "pct",
+      "80.95238095238095"
+     ],
+     [
+      "RACE",
+      "ONK-44 400 mg",
+      "BLACK OR AFRICAN AMERICAN",
+      "n",
+      "0"
+     ],
+     [
+      "RACE",
+      "ONK-44 400 mg",
+      "BLACK OR AFRICAN AMERICAN",
+      "pct",
+      "0"
+     ],
+     [
+      "RACE",
+      "Docetaxel",
+      "BLACK OR AFRICAN AMERICAN",
+      "n",
+      "1"
+     ],
+     [
+      "RACE",
+      "Docetaxel",
+      "BLACK OR AFRICAN AMERICAN",
+      "pct",
+      "4.166666666666667"
+     ],
+     [
+      "RACE",
+      "Total",
+      "BLACK OR AFRICAN AMERICAN",
+      "n",
+      "1"
+     ],
+     [
+      "RACE",
+      "Total",
+      "BLACK OR AFRICAN AMERICAN",
+      "pct",
+      "2.380952380952381"
+     ],
+     [
+      "RACE",
+      "ONK-44 400 mg",
+      "WHITE",
+      "n",
+      "3"
+     ],
+     [
+      "RACE",
+      "ONK-44 400 mg",
+      "WHITE",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "RACE",
+      "Docetaxel",
+      "WHITE",
+      "n",
+      "4"
+     ],
+     [
+      "RACE",
+      "Docetaxel",
+      "WHITE",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "RACE",
+      "Total",
+      "WHITE",
+      "n",
+      "7"
+     ],
+     [
+      "RACE",
+      "Total",
+      "WHITE",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "COUNTRY",
+      "ONK-44 400 mg",
+      "GBR",
+      "n",
+      "7"
+     ],
+     [
+      "COUNTRY",
+      "ONK-44 400 mg",
+      "GBR",
+      "pct",
+      "38.888888888888886"
+     ],
+     [
+      "COUNTRY",
+      "Docetaxel",
+      "GBR",
+      "n",
+      "8"
+     ],
+     [
+      "COUNTRY",
+      "Docetaxel",
+      "GBR",
+      "pct",
+      "33.333333333333336"
+     ],
+     [
+      "COUNTRY",
+      "Total",
+      "GBR",
+      "n",
+      "15"
+     ],
+     [
+      "COUNTRY",
+      "Total",
+      "GBR",
+      "pct",
+      "35.714285714285715"
+     ],
+     [
+      "COUNTRY",
+      "ONK-44 400 mg",
+      "IND",
+      "n",
+      "11"
+     ],
+     [
+      "COUNTRY",
+      "ONK-44 400 mg",
+      "IND",
+      "pct",
+      "61.111111111111114"
+     ],
+     [
+      "COUNTRY",
+      "Docetaxel",
+      "IND",
+      "n",
+      "16"
+     ],
+     [
+      "COUNTRY",
+      "Docetaxel",
+      "IND",
+      "pct",
+      "66.66666666666667"
+     ],
+     [
+      "COUNTRY",
+      "Total",
+      "IND",
+      "n",
+      "27"
+     ],
+     [
+      "COUNTRY",
+      "Total",
+      "IND",
+      "pct",
+      "64.28571428571429"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.1.2 Demographic characteristics",
+    "population": "Intent-to-treat population (all randomised)",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "rows": [
+     {
+      "label": "Age (years)",
+      "cells": [
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "Mean (SD)",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "55.9 (8.02)",
+        "keys": [
+         {
+          "an": "AGE",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "63.1 (10.20)",
+        "keys": [
+         {
+          "an": "AGE",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "60.0 (9.89)",
+        "keys": [
+         {
+          "an": "AGE",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Median",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "53.5",
+        "keys": [
+         {
+          "an": "AGE",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "61.5",
+        "keys": [
+         {
+          "an": "AGE",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "59.5",
+        "keys": [
+         {
+          "an": "AGE",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Min, Max",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "47, 70",
+        "keys": [
+         {
+          "an": "AGE",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "46, 77",
+        "keys": [
+         {
+          "an": "AGE",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "46, 77",
+        "keys": [
+         {
+          "an": "AGE",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Age group, n (%)",
+      "cells": [
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "<65",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "14 (77.8)",
+        "keys": [
+         {
+          "an": "AGEGR1",
+          "g": "ONK-44 400 mg",
+          "cat": "<65"
+         }
+        ]
+       },
+       {
+        "text": "13 (54.2)",
+        "keys": [
+         {
+          "an": "AGEGR1",
+          "g": "Docetaxel",
+          "cat": "<65"
+         }
+        ]
+       },
+       {
+        "text": "27 (64.3)",
+        "keys": [
+         {
+          "an": "AGEGR1",
+          "g": "Total",
+          "cat": "<65"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": ">=65",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "4 (22.2)",
+        "keys": [
+         {
+          "an": "AGEGR1",
+          "g": "ONK-44 400 mg",
+          "cat": ">=65"
+         }
+        ]
+       },
+       {
+        "text": "11 (45.8)",
+        "keys": [
+         {
+          "an": "AGEGR1",
+          "g": "Docetaxel",
+          "cat": ">=65"
+         }
+        ]
+       },
+       {
+        "text": "15 (35.7)",
+        "keys": [
+         {
+          "an": "AGEGR1",
+          "g": "Total",
+          "cat": ">=65"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Sex, n (%)",
+      "cells": [
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "F",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "5 (27.8)",
+        "keys": [
+         {
+          "an": "SEX",
+          "g": "ONK-44 400 mg",
+          "cat": "F"
+         }
+        ]
+       },
+       {
+        "text": "7 (29.2)",
+        "keys": [
+         {
+          "an": "SEX",
+          "g": "Docetaxel",
+          "cat": "F"
+         }
+        ]
+       },
+       {
+        "text": "12 (28.6)",
+        "keys": [
+         {
+          "an": "SEX",
+          "g": "Total",
+          "cat": "F"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "M",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "13 (72.2)",
+        "keys": [
+         {
+          "an": "SEX",
+          "g": "ONK-44 400 mg",
+          "cat": "M"
+         }
+        ]
+       },
+       {
+        "text": "17 (70.8)",
+        "keys": [
+         {
+          "an": "SEX",
+          "g": "Docetaxel",
+          "cat": "M"
+         }
+        ]
+       },
+       {
+        "text": "30 (71.4)",
+        "keys": [
+         {
+          "an": "SEX",
+          "g": "Total",
+          "cat": "M"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Race, n (%)",
+      "cells": [
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "ASIAN",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "15 (83.3)",
+        "keys": [
+         {
+          "an": "RACE",
+          "g": "ONK-44 400 mg",
+          "cat": "ASIAN"
+         }
+        ]
+       },
+       {
+        "text": "19 (79.2)",
+        "keys": [
+         {
+          "an": "RACE",
+          "g": "Docetaxel",
+          "cat": "ASIAN"
+         }
+        ]
+       },
+       {
+        "text": "34 (81.0)",
+        "keys": [
+         {
+          "an": "RACE",
+          "g": "Total",
+          "cat": "ASIAN"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "BLACK OR AFRICAN AMERICAN",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "RACE",
+          "g": "ONK-44 400 mg",
+          "cat": "BLACK OR AFRICAN AMERICAN"
+         }
+        ]
+       },
+       {
+        "text": "1 (4.2)",
+        "keys": [
+         {
+          "an": "RACE",
+          "g": "Docetaxel",
+          "cat": "BLACK OR AFRICAN AMERICAN"
+         }
+        ]
+       },
+       {
+        "text": "1 (2.4)",
+        "keys": [
+         {
+          "an": "RACE",
+          "g": "Total",
+          "cat": "BLACK OR AFRICAN AMERICAN"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "WHITE",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "3 (16.7)",
+        "keys": [
+         {
+          "an": "RACE",
+          "g": "ONK-44 400 mg",
+          "cat": "WHITE"
+         }
+        ]
+       },
+       {
+        "text": "4 (16.7)",
+        "keys": [
+         {
+          "an": "RACE",
+          "g": "Docetaxel",
+          "cat": "WHITE"
+         }
+        ]
+       },
+       {
+        "text": "7 (16.7)",
+        "keys": [
+         {
+          "an": "RACE",
+          "g": "Total",
+          "cat": "WHITE"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Country, n (%)",
+      "cells": [
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "GBR",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "7 (38.9)",
+        "keys": [
+         {
+          "an": "COUNTRY",
+          "g": "ONK-44 400 mg",
+          "cat": "GBR"
+         }
+        ]
+       },
+       {
+        "text": "8 (33.3)",
+        "keys": [
+         {
+          "an": "COUNTRY",
+          "g": "Docetaxel",
+          "cat": "GBR"
+         }
+        ]
+       },
+       {
+        "text": "15 (35.7)",
+        "keys": [
+         {
+          "an": "COUNTRY",
+          "g": "Total",
+          "cat": "GBR"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "IND",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "11 (61.1)",
+        "keys": [
+         {
+          "an": "COUNTRY",
+          "g": "ONK-44 400 mg",
+          "cat": "IND"
+         }
+        ]
+       },
+       {
+        "text": "16 (66.7)",
+        "keys": [
+         {
+          "an": "COUNTRY",
+          "g": "Docetaxel",
+          "cat": "IND"
+         }
+        ]
+       },
+       {
+        "text": "27 (64.3)",
+        "keys": [
+         {
+          "an": "COUNTRY",
+          "g": "Total",
+          "cat": "IND"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "footnotes": []
+   }
+  },
+  {
+   "id": "T3",
+   "title": "Table 14.2.1: progression-free survival by independent review (primary endpoint)",
+   "kind": "ard",
+   "area": "Efficacy",
+   "ref": "SAP 9.3 (primary analysis); ICH E3 section 11.4.1",
+   "shell": "Participants; events; censored; median in months (95% CI); hazard ratio (95% CI); log-rank p-value.",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "PFS",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "18"
+     ],
+     [
+      "PFS",
+      "Docetaxel",
+      null,
+      "n",
+      "24"
+     ],
+     [
+      "PFS_EVT",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "8"
+     ],
+     [
+      "PFS_EVT",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "44.44444444444444"
+     ],
+     [
+      "PFS_EVT",
+      "Docetaxel",
+      null,
+      "n",
+      "17"
+     ],
+     [
+      "PFS_EVT",
+      "Docetaxel",
+      null,
+      "pct",
+      "70.83333333333333"
+     ],
+     [
+      "PFS_CNS",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "10"
+     ],
+     [
+      "PFS_CNS",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "55.55555555555556"
+     ],
+     [
+      "PFS_CNS",
+      "Docetaxel",
+      null,
+      "n",
+      "7"
+     ],
+     [
+      "PFS_CNS",
+      "Docetaxel",
+      null,
+      "pct",
+      "29.166666666666668"
+     ],
+     [
+      "PFS_MED",
+      "ONK-44 400 mg",
+      null,
+      "est",
+      "7.063655030800821"
+     ],
+     [
+      "PFS_MED",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "5.585215605749487"
+     ],
+     [
+      "PFS_MED",
+      "Docetaxel",
+      null,
+      "est",
+      "5.650924024640657"
+     ],
+     [
+      "PFS_MED",
+      "Docetaxel",
+      null,
+      "lcl",
+      "4.303901437371663"
+     ],
+     [
+      "PFS_MED",
+      "Docetaxel",
+      null,
+      "ucl",
+      "6.899383983572895"
+     ],
+     [
+      "PFS_HR",
+      "ONK-44 400 mg",
+      null,
+      "est",
+      "0.2890638106947187"
+     ],
+     [
+      "PFS_HR",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "0.10982241179915744"
+     ],
+     [
+      "PFS_HR",
+      "ONK-44 400 mg",
+      null,
+      "ucl",
+      "0.7608454894085035"
+     ],
+     [
+      "PFS_P",
+      "ONK-44 400 mg",
+      null,
+      "p",
+      "0.007260518491933654"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.2.1 Progression-free survival by independent review (primary endpoint)",
+    "population": "Intent-to-treat population (all randomised), as randomised",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "rows": [
+     {
+      "label": "Participants",
+      "cells": [
+       {
+        "text": "18",
+        "keys": [
+         {
+          "an": "PFS",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "24",
+        "keys": [
+         {
+          "an": "PFS",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "With an event, n (%)",
+      "cells": [
+       {
+        "text": "8 (44.4)",
+        "keys": [
+         {
+          "an": "PFS_EVT",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "17 (70.8)",
+        "keys": [
+         {
+          "an": "PFS_EVT",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Censored, n (%)",
+      "cells": [
+       {
+        "text": "10 (55.6)",
+        "keys": [
+         {
+          "an": "PFS_CNS",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "7 (29.2)",
+        "keys": [
+         {
+          "an": "PFS_CNS",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Median, months (95% CI)",
+      "cells": [
+       {
+        "text": "7.1 (5.6, NE)",
+        "keys": [
+         {
+          "an": "PFS_MED",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "5.7 (4.3, 6.9)",
+        "keys": [
+         {
+          "an": "PFS_MED",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Hazard ratio, ONK-44 vs docetaxel (95% CI)",
+      "cells": [
+       {
+        "text": "0.29 (0.11, 0.76)",
+        "keys": [
+         {
+          "an": "PFS_HR",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "Log-rank test, p-value",
+      "cells": [
+       {
+        "text": "0.007",
+        "keys": [
+         {
+          "an": "PFS_P",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": ""
+       }
+      ]
+     }
+    ],
+    "footnotes": [
+     "Progression by RECIST 1.1 as read by the blinded independent central review, or death from any cause. Censored at the last adequate tumour assessment.",
+     "Kaplan-Meier medians; 95% CI by the Brookmeyer-Crowley method with log(-log) limits. NE: not estimable. Cox proportional hazards model with treatment (Breslow ties); unstratified log-rank test."
+    ]
+   }
+  },
+  {
+   "id": "T4",
+   "title": "Table 14.2.2: progression-free survival by the investigator (sensitivity analysis)",
+   "kind": "ard",
+   "area": "Efficacy",
+   "ref": "SAP 9.3.2; ICH E3 section 11.4.1",
+   "shell": "Participants; events; censored; median in months (95% CI); hazard ratio (95% CI); log-rank p-value.",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "PFSINV",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "18"
+     ],
+     [
+      "PFSINV",
+      "Docetaxel",
+      null,
+      "n",
+      "24"
+     ],
+     [
+      "PFSINV_EVT",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "8"
+     ],
+     [
+      "PFSINV_EVT",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "44.44444444444444"
+     ],
+     [
+      "PFSINV_EVT",
+      "Docetaxel",
+      null,
+      "n",
+      "17"
+     ],
+     [
+      "PFSINV_EVT",
+      "Docetaxel",
+      null,
+      "pct",
+      "70.83333333333333"
+     ],
+     [
+      "PFSINV_CNS",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "10"
+     ],
+     [
+      "PFSINV_CNS",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "55.55555555555556"
+     ],
+     [
+      "PFSINV_CNS",
+      "Docetaxel",
+      null,
+      "n",
+      "7"
+     ],
+     [
+      "PFSINV_CNS",
+      "Docetaxel",
+      null,
+      "pct",
+      "29.166666666666668"
+     ],
+     [
+      "PFSINV_MED",
+      "ONK-44 400 mg",
+      null,
+      "est",
+      "7.063655030800821"
+     ],
+     [
+      "PFSINV_MED",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "5.618069815195072"
+     ],
+     [
+      "PFSINV_MED",
+      "Docetaxel",
+      null,
+      "est",
+      "5.650924024640657"
+     ],
+     [
+      "PFSINV_MED",
+      "Docetaxel",
+      null,
+      "lcl",
+      "5.519507186858316"
+     ],
+     [
+      "PFSINV_MED",
+      "Docetaxel",
+      null,
+      "ucl",
+      "6.899383983572895"
+     ],
+     [
+      "PFSINV_HR",
+      "ONK-44 400 mg",
+      null,
+      "est",
+      "0.26202485955451293"
+     ],
+     [
+      "PFSINV_HR",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "0.09832825943214289"
+     ],
+     [
+      "PFSINV_HR",
+      "ONK-44 400 mg",
+      null,
+      "ucl",
+      "0.6982430831285382"
+     ],
+     [
+      "PFSINV_P",
+      "ONK-44 400 mg",
+      null,
+      "p",
+      "0.003750265491067717"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.2.2 Progression-free survival by the investigator (sensitivity analysis)",
+    "population": "Intent-to-treat population (all randomised), as randomised",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "rows": [
+     {
+      "label": "Participants",
+      "cells": [
+       {
+        "text": "18",
+        "keys": [
+         {
+          "an": "PFSINV",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "24",
+        "keys": [
+         {
+          "an": "PFSINV",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "With an event, n (%)",
+      "cells": [
+       {
+        "text": "8 (44.4)",
+        "keys": [
+         {
+          "an": "PFSINV_EVT",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "17 (70.8)",
+        "keys": [
+         {
+          "an": "PFSINV_EVT",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Censored, n (%)",
+      "cells": [
+       {
+        "text": "10 (55.6)",
+        "keys": [
+         {
+          "an": "PFSINV_CNS",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "7 (29.2)",
+        "keys": [
+         {
+          "an": "PFSINV_CNS",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Median, months (95% CI)",
+      "cells": [
+       {
+        "text": "7.1 (5.6, NE)",
+        "keys": [
+         {
+          "an": "PFSINV_MED",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "5.7 (5.5, 6.9)",
+        "keys": [
+         {
+          "an": "PFSINV_MED",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Hazard ratio, ONK-44 vs docetaxel (95% CI)",
+      "cells": [
+       {
+        "text": "0.26 (0.10, 0.70)",
+        "keys": [
+         {
+          "an": "PFSINV_HR",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "Log-rank test, p-value",
+      "cells": [
+       {
+        "text": "0.004",
+        "keys": [
+         {
+          "an": "PFSINV_P",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": ""
+       }
+      ]
+     }
+    ],
+    "footnotes": [
+     "Progression by RECIST 1.1 as assessed by the investigator, or death. Censored at the last adequate assessment.",
+     "Kaplan-Meier medians; 95% CI by the Brookmeyer-Crowley method with log(-log) limits. NE: not estimable. Cox proportional hazards model with treatment (Breslow ties); unstratified log-rank test."
+    ]
+   }
+  },
+  {
+   "id": "T5",
+   "title": "Table 14.2.3: best overall response (RECIST 1.1)",
+   "kind": "ard",
+   "area": "Efficacy",
+   "ref": "SAP 9.4; ICH E3 section 11.4.1",
+   "shell": "Best overall response by independent review, then by the investigator; objective response rate with exact 95% CI; difference with 95% CI; agreement between the two reviews.",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "N",
+      "ONK-44 400 mg",
+      null,
+      "N",
+      "18"
+     ],
+     [
+      "N",
+      "Docetaxel",
+      null,
+      "N",
+      "24"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "CR",
+      "n",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "CR",
+      "pct",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "CR",
+      "n",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "CR",
+      "pct",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "PR",
+      "n",
+      "10"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "PR",
+      "pct",
+      "55.55555555555556"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "PR",
+      "n",
+      "6"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "PR",
+      "pct",
+      "25"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "SD",
+      "n",
+      "8"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "SD",
+      "pct",
+      "44.44444444444444"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "SD",
+      "n",
+      "18"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "SD",
+      "pct",
+      "75"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "PD",
+      "n",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "PD",
+      "pct",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "PD",
+      "n",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "PD",
+      "pct",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "NE",
+      "n",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "ONK-44 400 mg",
+      "NE",
+      "pct",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "NE",
+      "n",
+      "0"
+     ],
+     [
+      "IRC_BOR",
+      "Docetaxel",
+      "NE",
+      "pct",
+      "0"
+     ],
+     [
+      "IRC_ORR",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "10"
+     ],
+     [
+      "IRC_ORR",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "55.55555555555556"
+     ],
+     [
+      "IRC_ORR",
+      "Docetaxel",
+      null,
+      "n",
+      "6"
+     ],
+     [
+      "IRC_ORR",
+      "Docetaxel",
+      null,
+      "pct",
+      "25"
+     ],
+     [
+      "IRC_ORRCI",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "30.757165899875595"
+     ],
+     [
+      "IRC_ORRCI",
+      "ONK-44 400 mg",
+      null,
+      "ucl",
+      "78.46984926127001"
+     ],
+     [
+      "IRC_ORRCI",
+      "Docetaxel",
+      null,
+      "lcl",
+      "9.773040947453298"
+     ],
+     [
+      "IRC_ORRCI",
+      "Docetaxel",
+      null,
+      "ucl",
+      "46.71128024226693"
+     ],
+     [
+      "IRC_DIFF",
+      "ONK-44 400 mg",
+      null,
+      "est",
+      "30.555555555555557"
+     ],
+     [
+      "IRC_DIFF",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "1.7968513569003406"
+     ],
+     [
+      "IRC_DIFF",
+      "ONK-44 400 mg",
+      null,
+      "ucl",
+      "59.314259754210774"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "CR",
+      "n",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "CR",
+      "pct",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "CR",
+      "n",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "CR",
+      "pct",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "PR",
+      "n",
+      "11"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "PR",
+      "pct",
+      "61.111111111111114"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "PR",
+      "n",
+      "6"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "PR",
+      "pct",
+      "25"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "SD",
+      "n",
+      "7"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "SD",
+      "pct",
+      "38.888888888888886"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "SD",
+      "n",
+      "18"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "SD",
+      "pct",
+      "75"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "PD",
+      "n",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "PD",
+      "pct",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "PD",
+      "n",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "PD",
+      "pct",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "NE",
+      "n",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "ONK-44 400 mg",
+      "NE",
+      "pct",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "NE",
+      "n",
+      "0"
+     ],
+     [
+      "INV_BOR",
+      "Docetaxel",
+      "NE",
+      "pct",
+      "0"
+     ],
+     [
+      "INV_ORR",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "11"
+     ],
+     [
+      "INV_ORR",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "61.111111111111114"
+     ],
+     [
+      "INV_ORR",
+      "Docetaxel",
+      null,
+      "n",
+      "6"
+     ],
+     [
+      "INV_ORR",
+      "Docetaxel",
+      null,
+      "pct",
+      "25"
+     ],
+     [
+      "INV_ORRCI",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "35.74512058930627"
+     ],
+     [
+      "INV_ORRCI",
+      "ONK-44 400 mg",
+      null,
+      "ucl",
+      "82.70141452102482"
+     ],
+     [
+      "INV_ORRCI",
+      "Docetaxel",
+      null,
+      "lcl",
+      "9.773040947453298"
+     ],
+     [
+      "INV_ORRCI",
+      "Docetaxel",
+      null,
+      "ucl",
+      "46.71128024226693"
+     ],
+     [
+      "INV_DIFF",
+      "ONK-44 400 mg",
+      null,
+      "est",
+      "36.111111111111114"
+     ],
+     [
+      "INV_DIFF",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "7.698042353361966"
+     ],
+     [
+      "INV_DIFF",
+      "ONK-44 400 mg",
+      null,
+      "ucl",
+      "64.52417986886026"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.2.3 Best overall response",
+    "population": "Intent-to-treat population (all randomised), as randomised",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "rows": [
+     {
+      "label": "N",
+      "cells": [
+       {
+        "text": "18",
+        "keys": [
+         {
+          "an": "N",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "24",
+        "keys": [
+         {
+          "an": "N",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Independent review",
+      "cells": [
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "Complete response",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "CR"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "Docetaxel",
+          "cat": "CR"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Partial response",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "10 (55.6)",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "PR"
+         }
+        ]
+       },
+       {
+        "text": "6 (25.0)",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "Docetaxel",
+          "cat": "PR"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Stable disease",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "8 (44.4)",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "SD"
+         }
+        ]
+       },
+       {
+        "text": "18 (75.0)",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "Docetaxel",
+          "cat": "SD"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Progressive disease",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "PD"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "Docetaxel",
+          "cat": "PD"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Not evaluable",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "NE"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "IRC_BOR",
+          "g": "Docetaxel",
+          "cat": "NE"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Objective response (CR or PR), n (%)",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "10 (55.6)",
+        "keys": [
+         {
+          "an": "IRC_ORR",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "6 (25.0)",
+        "keys": [
+         {
+          "an": "IRC_ORR",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "95% CI for the response rate, %",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "30.8, 78.5",
+        "keys": [
+         {
+          "an": "IRC_ORRCI",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "9.8, 46.7",
+        "keys": [
+         {
+          "an": "IRC_ORRCI",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Difference, ONK-44 minus docetaxel, % (95% CI)",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "30.6 (1.8, 59.3)",
+        "keys": [
+         {
+          "an": "IRC_DIFF",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "Investigator",
+      "cells": [
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "Complete response",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "CR"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "Docetaxel",
+          "cat": "CR"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Partial response",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "11 (61.1)",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "PR"
+         }
+        ]
+       },
+       {
+        "text": "6 (25.0)",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "Docetaxel",
+          "cat": "PR"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Stable disease",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "7 (38.9)",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "SD"
+         }
+        ]
+       },
+       {
+        "text": "18 (75.0)",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "Docetaxel",
+          "cat": "SD"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Progressive disease",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "PD"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "Docetaxel",
+          "cat": "PD"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Not evaluable",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "ONK-44 400 mg",
+          "cat": "NE"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "INV_BOR",
+          "g": "Docetaxel",
+          "cat": "NE"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Objective response (CR or PR), n (%)",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "11 (61.1)",
+        "keys": [
+         {
+          "an": "INV_ORR",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "6 (25.0)",
+        "keys": [
+         {
+          "an": "INV_ORR",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "95% CI for the response rate, %",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "35.7, 82.7",
+        "keys": [
+         {
+          "an": "INV_ORRCI",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "9.8, 46.7",
+        "keys": [
+         {
+          "an": "INV_ORRCI",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Difference, ONK-44 minus docetaxel, % (95% CI)",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "36.1 (7.7, 64.5)",
+        "keys": [
+         {
+          "an": "INV_DIFF",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": ""
+       }
+      ]
+     }
+    ],
+    "footnotes": [
+     "Independent review and investigator agreed on whether a participant responded for 41 of 42 participants (97.6%).",
+     "Best overall response from the RECIST 1.1 overall responses up to progression; stable disease counts only if assessed at least 5 weeks after randomisation; responses need no confirmation in this randomised study. 95% CI for each rate by the Clopper-Pearson method; for the difference, a Wald interval."
+    ]
+   }
+  },
+  {
+   "id": "T6",
+   "title": "Table 14.2.4: overall survival (secondary endpoint, interim)",
+   "kind": "ard",
+   "area": "Efficacy",
+   "ref": "SAP 9.4; ICH E3 section 11.4.1",
+   "shell": "Participants; events; censored; median in months (95% CI); hazard ratio (95% CI); log-rank p-value.",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "OS",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "18"
+     ],
+     [
+      "OS",
+      "Docetaxel",
+      null,
+      "n",
+      "24"
+     ],
+     [
+      "OS_EVT",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "3"
+     ],
+     [
+      "OS_EVT",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "OS_EVT",
+      "Docetaxel",
+      null,
+      "n",
+      "5"
+     ],
+     [
+      "OS_EVT",
+      "Docetaxel",
+      null,
+      "pct",
+      "20.833333333333332"
+     ],
+     [
+      "OS_CNS",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "15"
+     ],
+     [
+      "OS_CNS",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "83.33333333333333"
+     ],
+     [
+      "OS_CNS",
+      "Docetaxel",
+      null,
+      "n",
+      "19"
+     ],
+     [
+      "OS_CNS",
+      "Docetaxel",
+      null,
+      "pct",
+      "79.16666666666667"
+     ],
+     [
+      "OS_MED",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "7.7207392197125255"
+     ],
+     [
+      "OS_MED",
+      "Docetaxel",
+      null,
+      "lcl",
+      "6.767967145790554"
+     ],
+     [
+      "OS_HR",
+      "ONK-44 400 mg",
+      null,
+      "est",
+      "0.5110305187440177"
+     ],
+     [
+      "OS_HR",
+      "ONK-44 400 mg",
+      null,
+      "lcl",
+      "0.12004496317537826"
+     ],
+     [
+      "OS_HR",
+      "ONK-44 400 mg",
+      null,
+      "ucl",
+      "2.175453131725757"
+     ],
+     [
+      "OS_P",
+      "ONK-44 400 mg",
+      null,
+      "p",
+      "0.35536470537226084"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.2.4 Overall survival (secondary endpoint, interim)",
+    "population": "Intent-to-treat population (all randomised), as randomised",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "rows": [
+     {
+      "label": "Participants",
+      "cells": [
+       {
+        "text": "18",
+        "keys": [
+         {
+          "an": "OS",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "24",
+        "keys": [
+         {
+          "an": "OS",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "With an event, n (%)",
+      "cells": [
+       {
+        "text": "3 (16.7)",
+        "keys": [
+         {
+          "an": "OS_EVT",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "5 (20.8)",
+        "keys": [
+         {
+          "an": "OS_EVT",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Censored, n (%)",
+      "cells": [
+       {
+        "text": "15 (83.3)",
+        "keys": [
+         {
+          "an": "OS_CNS",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "19 (79.2)",
+        "keys": [
+         {
+          "an": "OS_CNS",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Median, months (95% CI)",
+      "cells": [
+       {
+        "text": "NE (7.7, NE)",
+        "keys": [
+         {
+          "an": "OS_MED",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "NE (6.8, NE)",
+        "keys": [
+         {
+          "an": "OS_MED",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Hazard ratio, ONK-44 vs docetaxel (95% CI)",
+      "cells": [
+       {
+        "text": "0.51 (0.12, 2.18)",
+        "keys": [
+         {
+          "an": "OS_HR",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "Log-rank test, p-value",
+      "cells": [
+       {
+        "text": "0.355",
+        "keys": [
+         {
+          "an": "OS_P",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": ""
+       }
+      ]
+     }
+    ],
+    "footnotes": [
+     "Death from any cause; censored at the last date known alive, no later than the data cut-off (2026-10-31). The analysis is not final: few deaths had occurred at the cut-off.",
+     "Kaplan-Meier medians; 95% CI by the Brookmeyer-Crowley method with log(-log) limits. NE: not estimable. Cox proportional hazards model with treatment (Breslow ties); unstratified log-rank test."
+    ]
+   }
+  },
+  {
+   "id": "T7",
+   "title": "Table 14.3.5: extent of exposure (safety population)",
+   "kind": "ard",
+   "area": "Safety",
+   "ref": "SAP 9.5; ICH E3 section 12.1",
+   "shell": "Duration of treatment in days: n, mean (SD), median, min, max.",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "DUR",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "18"
+     ],
+     [
+      "DUR",
+      "Docetaxel",
+      null,
+      "n",
+      "24"
+     ],
+     [
+      "DUR",
+      "ONK-44 400 mg",
+      null,
+      "mean",
+      "175.16666666666666"
+     ],
+     [
+      "DUR",
+      "ONK-44 400 mg",
+      null,
+      "sd",
+      "58.95486808218839"
+     ],
+     [
+      "DUR",
+      "Docetaxel",
+      null,
+      "mean",
+      "176.75"
+     ],
+     [
+      "DUR",
+      "Docetaxel",
+      null,
+      "sd",
+      "36.592051881106165"
+     ],
+     [
+      "DUR",
+      "ONK-44 400 mg",
+      null,
+      "median",
+      "170"
+     ],
+     [
+      "DUR",
+      "Docetaxel",
+      null,
+      "median",
+      "168"
+     ],
+     [
+      "DUR",
+      "ONK-44 400 mg",
+      null,
+      "min",
+      "77"
+     ],
+     [
+      "DUR",
+      "ONK-44 400 mg",
+      null,
+      "max",
+      "272"
+     ],
+     [
+      "DUR",
+      "Docetaxel",
+      null,
+      "min",
+      "105"
+     ],
+     [
+      "DUR",
+      "Docetaxel",
+      null,
+      "max",
+      "252"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.3.5 Extent of exposure",
+    "population": "Safety population (all who took at least one dose), as treated",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel"
+    ],
+    "rows": [
+     {
+      "label": "Duration of treatment (days)",
+      "cells": [
+       {
+        "text": ""
+       },
+       {
+        "text": ""
+       }
+      ]
+     },
+     {
+      "label": "n",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "18",
+        "keys": [
+         {
+          "an": "DUR",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "24",
+        "keys": [
+         {
+          "an": "DUR",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Mean (SD)",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "175.2 (58.95)",
+        "keys": [
+         {
+          "an": "DUR",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "176.8 (36.59)",
+        "keys": [
+         {
+          "an": "DUR",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Median",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "170.0",
+        "keys": [
+         {
+          "an": "DUR",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "168.0",
+        "keys": [
+         {
+          "an": "DUR",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Min, Max",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "77, 272",
+        "keys": [
+         {
+          "an": "DUR",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "105, 252",
+        "keys": [
+         {
+          "an": "DUR",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "footnotes": [
+     "ONK-44: from the first to the last daily dose. Docetaxel: from the first infusion to 21 days after the last (one cycle)."
+    ]
+   }
+  },
+  {
+   "id": "F1",
+   "title": "Figure 14.2.1: Kaplan-Meier plot of progression-free survival by independent review",
+   "kind": "figure",
+   "area": "Efficacy",
+   "ref": "SAP 9.3",
+   "shell": "",
+   "frame": {
+    "columns": [
+     "TRT01P",
+     "TIME",
+     "NRISK",
+     "NEVENT",
+     "NCENS",
+     "SURV"
+    ],
+    "rows": [
+     [
+      "ONK-44 400 mg",
+      "4.2",
+      "16",
+      "1",
+      "0",
+      "0.9375"
+     ],
+     [
+      "ONK-44 400 mg",
+      "5.5",
+      "15",
+      "1",
+      "0",
+      "0.875"
+     ],
+     [
+      "ONK-44 400 mg",
+      "5.5",
+      "14",
+      "1",
+      "1",
+      "0.8125"
+     ],
+     [
+      "ONK-44 400 mg",
+      "5.6",
+      "11",
+      "1",
+      "0",
+      "0.7386363636363636"
+     ],
+     [
+      "ONK-44 400 mg",
+      "5.6",
+      "10",
+      "1",
+      "1",
+      "0.6647727272727273"
+     ],
+     [
+      "ONK-44 400 mg",
+      "7.0",
+      "7",
+      "1",
+      "0",
+      "0.5698051948051949"
+     ],
+     [
+      "ONK-44 400 mg",
+      "7.1",
+      "6",
+      "2",
+      "0",
+      "0.37987012987012997"
+     ],
+     [
+      "Docetaxel",
+      "4.1",
+      "24",
+      "2",
+      "0",
+      "0.9166666666666666"
+     ],
+     [
+      "Docetaxel",
+      "4.1",
+      "22",
+      "1",
+      "0",
+      "0.875"
+     ],
+     [
+      "Docetaxel",
+      "4.2",
+      "21",
+      "2",
+      "0",
+      "0.7916666666666666"
+     ],
+     [
+      "Docetaxel",
+      "4.3",
+      "19",
+      "1",
+      "0",
+      "0.75"
+     ],
+     [
+      "Docetaxel",
+      "4.3",
+      "18",
+      "1",
+      "1",
+      "0.7083333333333333"
+     ],
+     [
+      "Docetaxel",
+      "5.5",
+      "16",
+      "1",
+      "1",
+      "0.6640624999999999"
+     ],
+     [
+      "Docetaxel",
+      "5.5",
+      "14",
+      "1",
+      "0",
+      "0.6166294642857142"
+     ],
+     [
+      "Docetaxel",
+      "5.6",
+      "13",
+      "2",
+      "0",
+      "0.5217633928571428"
+     ],
+     [
+      "Docetaxel",
+      "5.7",
+      "9",
+      "1",
+      "2",
+      "0.46378968253968245"
+     ],
+     [
+      "Docetaxel",
+      "5.7",
+      "6",
+      "1",
+      "0",
+      "0.38649140211640204"
+     ],
+     [
+      "Docetaxel",
+      "6.9",
+      "4",
+      "2",
+      "0",
+      "0.19324570105820102"
+     ],
+     [
+      "Docetaxel",
+      "7.0",
+      "2",
+      "1",
+      "0",
+      "0.09662285052910051"
+     ],
+     [
+      "Docetaxel",
+      "7.0",
+      "1",
+      "1",
+      "0",
+      "0"
+     ]
+    ]
+   },
+   "display": null
+  }
+ ],
+ "reportingEvent": {
+  "id": "RE_ONK-44-302",
+  "name": "ONK-44-302 primary analysis",
+  "version": 1,
+  "study": "ONK-44-302",
+  "analysisSets": [
+   {
+    "id": "AS_ITT",
+    "name": "Intent-to-treat population",
+    "condition": {
+     "dataset": "ADSL",
+     "variable": "ITTFL",
+     "comparator": "EQ",
+     "value": [
+      "Y"
+     ]
+    }
+   },
+   {
+    "id": "AS_SAF",
+    "name": "Safety population",
+    "condition": {
+     "dataset": "ADSL",
+     "variable": "SAFFL",
+     "comparator": "EQ",
+     "value": [
+      "Y"
+     ]
+    }
+   }
+  ],
+  "analysisGroupings": [
+   {
+    "id": "GRP_TRTP",
+    "name": "Planned treatment",
+    "groupingVariable": "TRT01P",
+    "dataDriven": false,
+    "groups": [
+     {
+      "id": "GRP_TRTP_1",
+      "name": "ONK-44 400 mg",
+      "condition": {
+       "dataset": "ADSL",
+       "variable": "TRT01P",
+       "comparator": "EQ",
+       "value": [
+        "ONK-44 400 mg"
+       ]
+      }
+     },
+     {
+      "id": "GRP_TRTP_2",
+      "name": "Docetaxel",
+      "condition": {
+       "dataset": "ADSL",
+       "variable": "TRT01P",
+       "comparator": "EQ",
+       "value": [
+        "Docetaxel"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "GRP_TRTA",
+    "name": "Actual treatment",
+    "groupingVariable": "TRT01A",
+    "dataDriven": false,
+    "groups": [
+     {
+      "id": "GRP_TRTA_1",
+      "name": "ONK-44 400 mg",
+      "condition": {
+       "dataset": "ADSL",
+       "variable": "TRT01A",
+       "comparator": "EQ",
+       "value": [
+        "ONK-44 400 mg"
+       ]
+      }
+     },
+     {
+      "id": "GRP_TRTA_2",
+      "name": "Docetaxel",
+      "condition": {
+       "dataset": "ADSL",
+       "variable": "TRT01A",
+       "comparator": "EQ",
+       "value": [
+        "Docetaxel"
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "methods": [
+   {
+    "id": "MTH_T1",
+    "name": "Table 14.1.1: disposition at the data cut-off (randomised participants)",
+    "description": "Screened; screen failures; randomised; treated; on treatment at the cut-off; progression or death (independent review); died; alive at the cut-off."
+   },
+   {
+    "id": "MTH_T2",
+    "name": "Table 14.1.2: demographics (intent-to-treat population)",
+    "description": "Age; age group; sex; race; country."
+   },
+   {
+    "id": "MTH_T3",
+    "name": "Table 14.2.1: progression-free survival by independent review (primary endpoint)",
+    "description": "Participants; events; censored; median in months (95% CI); hazard ratio (95% CI); log-rank p-value."
+   },
+   {
+    "id": "MTH_T4",
+    "name": "Table 14.2.2: progression-free survival by the investigator (sensitivity analysis)",
+    "description": "Participants; events; censored; median in months (95% CI); hazard ratio (95% CI); log-rank p-value."
+   },
+   {
+    "id": "MTH_T5",
+    "name": "Table 14.2.3: best overall response (RECIST 1.1)",
+    "description": "Best overall response by independent review, then by the investigator; objective response rate with exact 95% CI; difference with 95% CI; agreement between the two reviews."
+   },
+   {
+    "id": "MTH_T6",
+    "name": "Table 14.2.4: overall survival (secondary endpoint, interim)",
+    "description": "Participants; events; censored; median in months (95% CI); hazard ratio (95% CI); log-rank p-value."
+   },
+   {
+    "id": "MTH_T7",
+    "name": "Table 14.3.5: extent of exposure (safety population)",
+    "description": "Duration of treatment in days: n, mean (SD), median, min, max."
+   }
+  ],
+  "analyses": [
+   {
+    "id": "AN_T1",
+    "name": "Table 14.1.1: disposition at the data cut-off (randomised participants)",
+    "analysisSetId": "AS_ITT",
+    "methodId": "MTH_T1",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTP",
+      "resultsByGroup": true
+     }
+    ]
+   },
+   {
+    "id": "AN_T2",
+    "name": "Table 14.1.2: demographics (intent-to-treat population)",
+    "analysisSetId": "AS_ITT",
+    "methodId": "MTH_T2",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTP",
+      "resultsByGroup": true
+     }
+    ]
+   },
+   {
+    "id": "AN_T3",
+    "name": "Table 14.2.1: progression-free survival by independent review (primary endpoint)",
+    "analysisSetId": "AS_ITT",
+    "methodId": "MTH_T3",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTP",
+      "resultsByGroup": true
+     }
+    ]
+   },
+   {
+    "id": "AN_T4",
+    "name": "Table 14.2.2: progression-free survival by the investigator (sensitivity analysis)",
+    "analysisSetId": "AS_ITT",
+    "methodId": "MTH_T4",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTP",
+      "resultsByGroup": true
+     }
+    ]
+   },
+   {
+    "id": "AN_T5",
+    "name": "Table 14.2.3: best overall response (RECIST 1.1)",
+    "analysisSetId": "AS_ITT",
+    "methodId": "MTH_T5",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTP",
+      "resultsByGroup": true
+     }
+    ]
+   },
+   {
+    "id": "AN_T6",
+    "name": "Table 14.2.4: overall survival (secondary endpoint, interim)",
+    "analysisSetId": "AS_ITT",
+    "methodId": "MTH_T6",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTP",
+      "resultsByGroup": true
+     }
+    ]
+   },
+   {
+    "id": "AN_T7",
+    "name": "Table 14.3.5: extent of exposure (safety population)",
+    "analysisSetId": "AS_SAF",
+    "methodId": "MTH_T7",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTA",
+      "resultsByGroup": true
+     }
+    ]
+   }
+  ],
+  "outputs": [
+   {
+    "id": "OUT_T1",
+    "name": "Table 14.1.1: disposition at the data cut-off (randomised participants)",
+    "analysisIds": [
+     "AN_T1"
+    ]
+   },
+   {
+    "id": "OUT_T2",
+    "name": "Table 14.1.2: demographics (intent-to-treat population)",
+    "analysisIds": [
+     "AN_T2"
+    ]
+   },
+   {
+    "id": "OUT_T3",
+    "name": "Table 14.2.1: progression-free survival by independent review (primary endpoint)",
+    "analysisIds": [
+     "AN_T3"
+    ]
+   },
+   {
+    "id": "OUT_T4",
+    "name": "Table 14.2.2: progression-free survival by the investigator (sensitivity analysis)",
+    "analysisIds": [
+     "AN_T4"
+    ]
+   },
+   {
+    "id": "OUT_T5",
+    "name": "Table 14.2.3: best overall response (RECIST 1.1)",
+    "analysisIds": [
+     "AN_T5"
+    ]
+   },
+   {
+    "id": "OUT_T6",
+    "name": "Table 14.2.4: overall survival (secondary endpoint, interim)",
+    "analysisIds": [
+     "AN_T6"
+    ]
+   },
+   {
+    "id": "OUT_T7",
+    "name": "Table 14.3.5: extent of exposure (safety population)",
+    "analysisIds": [
+     "AN_T7"
+    ]
+   },
+   {
+    "id": "OUT_F1",
+    "name": "Figure 14.2.1: Kaplan-Meier plot of progression-free survival by independent review",
+    "analysisIds": [
+     "AN_F1"
+    ]
+   }
+  ]
+ }
+}

@@ -40,7 +40,7 @@ export default function Home() {
             <input type="file" accept=".zip,application/zip" className="block mt-1 text-xs" onChange={(e) => e.target.files?.[0] && upload(e.target.files[0])} />
           </label>
           {msg && <p role="alert" className="text-xs text-lab-red">{msg}</p>}
-          <p className="text-[11px] text-lab-text-muted">Two studies have programs: GLV-12-301 (shipped, or your own export) and HRP-301 (VERDANT-1, hand eczema), the study of the lifecycle journey: map your locked HRP-301 database in the trainer, upload its hand-off here, and the analysis package you export is step 8 of the journey. The lab reads the Dataset-JSON datasets in the hand-off. Your own SDTM may differ from the trainer's reference; the reference programs then run on your data, so the comparison stays fair.</p>
+          <p className="text-[11px] text-lab-text-muted">Three studies have programs: GLV-12-301 (shipped, or your own export); HRP-301 (VERDANT-1, hand eczema), the study of the lifecycle journey: map your locked HRP-301 database in the trainer, upload its hand-off here, and the analysis package you export is step 8 of the journey; and ONK-44-302 (MERIDIAN-2, lung cancer, RECIST 1.1): upload the trainer’s oncology hand-off for progression-free survival, response and overall survival programs. The lab reads the Dataset-JSON datasets in the hand-off. Your own SDTM may differ from the trainer's reference; the reference programs then run on your data, so the comparison stays fair.</p>
         </Panel>
         <Panel title="Your projects" sub="Kept in this browser.">
           <Table empty="No projects yet." head={['Project', 'Source', 'Programs matched', 'Updated', '']} rows={projects.map((x) => [

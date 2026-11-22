@@ -37,8 +37,9 @@ export type { Kind, Area, SpecRow, Program, StudyPack } from './packs/types'
 import type { Program, StudyPack } from './packs/types'
 import { GLV } from './packs/glv'
 import { HRP } from './packs/hrp'
+import { ONK } from './packs/onk'
 
-export const PACKS: Record<string, StudyPack> = { [GLV.id]: GLV, [HRP.id]: HRP }
+export const PACKS: Record<string, StudyPack> = { [GLV.id]: GLV, [HRP.id]: HRP, [ONK.id]: ONK }
 export const packOf = (study: string): StudyPack => PACKS[study] ?? GLV
 export const programMap = (pack: StudyPack) => new Map(pack.programs.map((p) => [p.id, p]))
 export const outputOf = (pack: StudyPack, id: string) => pack.programs.find((p) => p.id === id)!.output

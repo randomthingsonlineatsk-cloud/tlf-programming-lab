@@ -1,4 +1,4 @@
-// Runs the reference programs of both studies through webR and writes every table (its ARD and
+// Runs the reference programs of the three studies (GLV-12-301, HRP-301, ONK-44-302) through webR and writes every table (its ARD and
 // the drawn display), listing and figure data into the CSR & Narrative Studio, whose report
 // sections are written from them. Skipped when that repo is not beside this one.
 import { expect, test } from 'vitest'
@@ -13,7 +13,7 @@ const OUT = new URL('../../csr-narrative-studio/src/data/', import.meta.url)
 const KEEP = ['ADSL']
 test('write the study outputs for the CSR & Narrative Studio', async () => {
   if (!existsSync(OUT)) return
-  for (const [study, file, name] of [['GLV-12-301', '../public/data/glv-12-301-handoff.zip', 'glv-12-301'], ['HRP-301', './fixtures/hrp301_sdtm_handoff.zip', 'hrp-301']]) {
+  for (const [study, file, name] of [['GLV-12-301', '../public/data/glv-12-301-handoff.zip', 'glv-12-301'], ['HRP-301', './fixtures/hrp301_sdtm_handoff.zip', 'hrp-301'], ['ONK-44-302', './fixtures/onk44302_sdtm_handoff.zip', 'onk-44-302']]) {
     const w = new WebR({ interactive: false }); await w.init()
     await loadHandoff(w, readHandoff(new Uint8Array(readFileSync(new URL(file, import.meta.url)))))
     const pack = packOf(study), refs = await runReferences(w, pack)

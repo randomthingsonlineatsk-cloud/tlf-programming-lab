@@ -8,8 +8,19 @@ output by independent double programming.
 
 ## What it covers
 
-Two fictional studies: GLV-12-301 (type 2 diabetes, shipped with the app) and HRP-301 (VERDANT-1,
-hand eczema), the study of the pharmolecule lifecycle journey, from the learner's own SDTM hand-off.
+Three fictional studies: GLV-12-301 (type 2 diabetes, shipped with the app), HRP-301 (VERDANT-1,
+hand eczema), the study of the pharmolecule lifecycle journey, from the learner's own SDTM hand-off,
+and ONK-44-302 (MERIDIAN-2, ONK-44 against docetaxel in previously treated non-small cell lung
+cancer), from the SDTM Mapping Trainer's RECIST 1.1 hand-off (DM, DS, TU, TR, RS, PR, DD).
+
+- **Oncology (ONK-44-302)**: ADSL with the randomisation date from DS, ADTTE (progression-free
+  survival by blinded independent central review and by the investigator, overall survival, from
+  randomisation to the data cut-off) and ADRS (best overall response by RECIST 1.1); disposition at
+  the cut-off, demographics, Kaplan-Meier medians in months with Brookmeyer-Crowley CIs, Cox hazard
+  ratios and log-rank tests, response rates with Clopper-Pearson CIs, exposure, and the PFS
+  Kaplan-Meier plot. A test checks every cell against an independent JavaScript derivation (in the
+  CSR & Narrative Studio's scripts); the outputs feed the Studio's oncology report.
+- **Safety chemistry** includes total bilirubin (BILI) beside ALT and AST, for liver screening.
 
 - **ADaM** (ADaMIG v1.3): ADSL, ADAE and ADCM (occurrence data, with partial-date imputation and
   flags), ADLB, ADLBC and ADVS (basic data structure, with analysis windows and record selection),

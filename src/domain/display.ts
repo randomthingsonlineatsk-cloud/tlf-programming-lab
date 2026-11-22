@@ -246,3 +246,53 @@ ${row(['', ...d.head], true, true, true)}${d.rows.map((r, i) => row([`${r.indent
 ${d.footnotes.map((x) => `\\pard ${rtfEsc(x)}\\par`).join('\n')}
 \\pard Source: analysis results data. Training material.\\par}`
 }
+
+// ONK-44-302 (oncology): disposition at the cut-off, demographics, time to event and response.
+export const onkDisplays = (groups: string[]): Record<string, (f: Frame) => Display> => {
+  const gt = [...groups, 'Total'], onk = groups[0]
+  const mo = (x: number | undefined) => (x === undefined || isNaN(x) ? 'NE' : f(x, 1))
+  const tteD = (title: string, foot: string[]) => (fr: Frame): Display => {
+    const L = lookup(fr), an = [...new Set(fr.rows.map((r) => String(r[0])))].find((x) => !x.includes('_'))!
+    return {
+      title, population: 'Intent-to-treat population (all randomised), as randomised', head: groups, groups,
+      rows: [
+        { label: 'Participants', cells: groups.map((g) => c(f(L(an, g, null, 'n'), 0), an, g)) },
+        npctRow(L, 'With an event, n (%)', `${an}_EVT`, groups),
+        npctRow(L, 'Censored, n (%)', `${an}_CNS`, groups),
+        { label: 'Median, months (95% CI)', cells: groups.map((g) => c(`${mo(L(`${an}_MED`, g, null, 'est'))} (${mo(L(`${an}_MED`, g, null, 'lcl'))}, ${mo(L(`${an}_MED`, g, null, 'ucl'))})`, `${an}_MED`, g)) },
+        { label: 'Hazard ratio, ONK-44 vs docetaxel (95% CI)', cells: groups.map((g) => (g === onk ? c(`${f(L(`${an}_HR`, g, null, 'est'), 2)} (${f(L(`${an}_HR`, g, null, 'lcl'), 2)}, ${f(L(`${an}_HR`, g, null, 'ucl'), 2)})`, `${an}_HR`, g) : c(''))) },
+        { label: 'Log-rank test, p-value', cells: groups.map((g) => (g === onk ? c(pv(L(`${an}_P`, g, null, 'p')), `${an}_P`, g) : c(''))) },
+      ].map((r) => ({ ...r, indent: undefined })),
+      footnotes: [...foot, 'Kaplan-Meier medians; 95% CI by the Brookmeyer-Crowley method with log(-log) limits. NE: not estimable. Cox proportional hazards model with treatment (Breslow ties); unstratified log-rank test.'],
+    }
+  }
+  const respRows = (L: Lookup, label: string, an: string): Display['rows'] => [
+    { label, cells: blank(groups) },
+    ...(['CR', 'PR', 'SD', 'PD', 'NE'] as const).map((k) => npctRow(L, { CR: 'Complete response', PR: 'Partial response', SD: 'Stable disease', PD: 'Progressive disease', NE: 'Not evaluable' }[k], `${an}_BOR`, groups, k, 1)),
+    npctRow(L, 'Objective response (CR or PR), n (%)', `${an}_ORR`, groups, null, 1),
+    { label: '95% CI for the response rate, %', indent: 1, cells: groups.map((g) => c(`${f(L(`${an}_ORRCI`, g, null, 'lcl'), 1)}, ${f(L(`${an}_ORRCI`, g, null, 'ucl'), 1)}`, `${an}_ORRCI`, g)) },
+    { label: 'Difference, ONK-44 minus docetaxel, % (95% CI)', indent: 1, cells: groups.map((g) => (g === onk ? c(`${f(L(`${an}_DIFF`, g, null, 'est'), 1)} (${f(L(`${an}_DIFF`, g, null, 'lcl'), 1)}, ${f(L(`${an}_DIFF`, g, null, 'ucl'), 1)})`, `${an}_DIFF`, g) : c(''))) },
+  ]
+  return {
+    T1: (fr) => { const L = lookup(fr); const tot = (an: string) => gt.map((g) => c(g === 'Total' ? f(L(an, 'Total', null, 'n'), 0) : '', an, 'Total'))
+      return { title: 'Table 14.1.1 Disposition at the data cut-off', population: 'All randomised participants; data cut-off 2026-10-31', head: gt, groups: gt,
+        rows: [{ label: 'Screened', cells: tot('SCREENED') }, { label: 'Screen failures', cells: tot('SCRFAIL') }, { label: 'Randomised', cells: gt.map((g) => c(f(L('POP', g, null, 'N'), 0), 'POP', g)) },
+          { ...npctRow(L, 'Treated', 'TREATED', gt), indent: 0 }, { ...npctRow(L, 'Progressed or died (independent review)', 'PFSEVT', gt), indent: 0 }, { ...npctRow(L, 'Died', 'DEATH', gt), indent: 0 }, { ...npctRow(L, 'Alive at the data cut-off', 'ALIVE', gt), indent: 0 }],
+        footnotes: ['Screen failures did not reach randomisation. Data cut-off 2026-10-31.'] } },
+    T2: (fr) => { const L = lookup(fr)
+      const rows: Display['rows'] = [{ label: 'Age (years)', cells: blank(gt) }, ...contRows(L, 'AGE', gt, null, 1).filter((r) => r.label !== 'n')]
+      for (const [an, lab] of [['AGEGR1', 'Age group, n (%)'], ['SEX', 'Sex, n (%)'], ['RACE', 'Race, n (%)'], ['COUNTRY', 'Country, n (%)']] as const) { rows.push({ label: lab, cells: blank(gt) }); for (const k of cats(fr, an)) rows.push(npctRow(L, k, an, gt, k, 1)) }
+      return { title: 'Table 14.1.2 Demographic characteristics', population: 'Intent-to-treat population (all randomised)', head: gt, groups: gt, rows, footnotes: [] } },
+    T3: tteD('Table 14.2.1 Progression-free survival by independent review (primary endpoint)', ['Progression by RECIST 1.1 as read by the blinded independent central review, or death from any cause. Censored at the last adequate tumour assessment.']),
+    T4: tteD('Table 14.2.2 Progression-free survival by the investigator (sensitivity analysis)', ['Progression by RECIST 1.1 as assessed by the investigator, or death. Censored at the last adequate assessment.']),
+    T5: (fr) => { const L = lookup(fr)
+      return { title: 'Table 14.2.3 Best overall response', population: 'Intent-to-treat population (all randomised), as randomised', head: groups, groups,
+        rows: [{ label: 'N', cells: groups.map((g) => c(f(L('N', g, null, 'N'), 0), 'N', g)) }, ...respRows(L, 'Independent review', 'IRC'), ...respRows(L, 'Investigator', 'INV')],
+        footnotes: [`Independent review and investigator agreed on whether a participant responded for ${f(L('AGREE', 'Total', null, 'n'), 0)} of ${f(groups.reduce((a, g) => a + (L('N', g, null, 'N') ?? 0), 0), 0)} participants (${f(L('AGREE', 'Total', null, 'pct'), 1)}%).`, 'Best overall response from the RECIST 1.1 overall responses up to progression; stable disease counts only if assessed at least 5 weeks after randomisation; responses need no confirmation in this randomised study. 95% CI for each rate by the Clopper-Pearson method; for the difference, a Wald interval.'] } },
+    T6: tteD('Table 14.2.4 Overall survival (secondary endpoint, interim)', ['Death from any cause; censored at the last date known alive, no later than the data cut-off (2026-10-31). The analysis is not final: few deaths had occurred at the cut-off.']),
+    T7: (fr) => { const L = lookup(fr)
+      return { title: 'Table 14.3.5 Extent of exposure', population: 'Safety population (all who took at least one dose), as treated', head: groups, groups,
+        rows: [{ label: 'Duration of treatment (days)', cells: blank(groups) }, ...contRows(L, 'DUR', groups, null, 1)],
+        footnotes: ['ONK-44: from the first to the last daily dose. Docetaxel: from the first infusion to 21 days after the last (one cycle).'] } },
+  }
+}
