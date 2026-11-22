@@ -75,7 +75,7 @@ adlb <- adlb[order(adlb$USUBJID, adlb$AVISITN),
 `
 
 const ADLBC = String.raw`
-x <- lb[lb$LBTESTCD %in% c("ALT", "AST", "CREAT", "CHOL", "GLUC") & !(lb$LBTPT %in% "2 H POST-DOSE"),
+x <- lb[lb$LBTESTCD %in% c("ALT", "AST", "BILI", "CREAT", "CHOL", "GLUC") & !(lb$LBTPT %in% "2 H POST-DOSE"),
         c("STUDYID", "USUBJID", "LBSEQ", "LBTESTCD", "LBTEST", "LBSTRESU", "VISITNUM", "LBDTC", "LBSTRESN", "LBSTNRLO", "LBSTNRHI", "LBNRIND", "LBLOBXFL")]
 adlbc <- merge(x, adsl[adsl$SAFFL == "Y", c("USUBJID", "TRT01A", "TRT01AN", "SAFFL")], by = "USUBJID")
 adlbc$PARAMCD <- adlbc$LBTESTCD
@@ -517,14 +517,14 @@ export const GLV_PROGRAMS: Program[] = [
     id: 'ADLBC', title: 'ADLBC: laboratory chemistry for safety (BDS)', kind: 'dataset', area: 'ADaM', output: 'adlbc', keys: ['USUBJID', 'PARAMCD', 'AVISITN'], ref: 'ADaMIG v1.3 section 3.3', needs: ['ADSL'],
     intro: 'Safety chemistry (ALT, AST, creatinine, cholesterol, fasting glucose) for the safety population, with the reference range indicator at baseline and at each visit, for the shift table. Inputs: lb and the validated adsl.',
     spec: [
-      { name: 'Records', label: '', derivation: 'LBTESTCD in ALT, AST, CREAT, CHOL, GLUC, excluding the 2-hour post-dose glucose samples (LBTPT "2 H POST-DOSE"), which the SAP analyses separately. Safety population only.' },
+      { name: 'Records', label: '', derivation: 'LBTESTCD in ALT, AST, BILI, CREAT, CHOL, GLUC, excluding the 2-hour post-dose glucose samples (LBTPT "2 H POST-DOSE"), which the SAP analyses separately. Safety population only.' },
       { name: 'PARAMCD / PARAM', label: 'Parameter', derivation: 'LBTESTCD / "<LBTEST> (<unit>)", where the unit is the parameter\'s LBSTRESU (tests not done have none, but PARAM is the same on every record of a parameter).' },
       { name: 'AVAL, ANRLO, ANRHI, ANRIND', label: 'Value and reference range', derivation: 'LBSTRESN, LBSTNRLO, LBSTNRHI, LBNRIND.' },
       { name: 'ADT, AVISITN, AVISIT', label: 'Date and analysis visit', derivation: 'As in ADLB: VISITNUM 1, 4, 6, 9 → 0, 4, 12, 26.' },
       { name: 'ABLFL, BASE, BNRIND, CHG', label: 'Baseline', derivation: 'ABLFL "Y" where LBLOBXFL "Y". BASE and BNRIND: AVAL and ANRIND of that participant\'s baseline record for the parameter. CHG after baseline.' },
       { name: 'Also', label: '', derivation: 'STUDYID, USUBJID, TRT01A, TRT01AN, SAFFL, LBSEQ.' },
     ],
-    starter: '# Safety chemistry from lb for the safety population. Drop the 2-hour post-dose glucose samples.\n\nx <- lb[lb$LBTESTCD %in% c("ALT", "AST", "CREAT", "CHOL", "GLUC"), ]\n\n',
+    starter: '# Safety chemistry from lb for the safety population. Drop the 2-hour post-dose glucose samples.\n\nx <- lb[lb$LBTESTCD %in% c("ALT", "AST", "BILI", "CREAT", "CHOL", "GLUC"), ]\n\n',
     reference: ADLBC,
   },
   {
