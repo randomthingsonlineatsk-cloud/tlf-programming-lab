@@ -192,8 +192,8 @@
       "Docetaxel",
       "2026-02-12",
       "2026-02-13",
-      "2026-08-21",
-      "210",
+      "2026-08-07",
+      "196",
       "Y",
       "Y",
       "N",
@@ -212,8 +212,8 @@
       "Docetaxel",
       "2026-02-20",
       "2026-02-21",
-      "2026-07-18",
-      "168",
+      "2026-07-04",
+      "154",
       "Y",
       "Y",
       "N",
@@ -312,8 +312,8 @@
       "Docetaxel",
       "2026-03-18",
       "2026-03-19",
-      "2026-08-13",
-      "168",
+      "2026-07-30",
+      "154",
       "Y",
       "Y",
       "Y",
@@ -352,8 +352,8 @@
       "Docetaxel",
       "2026-03-28",
       "2026-03-29",
-      "2026-07-12",
-      "126",
+      "2026-06-28",
+      "112",
       "Y",
       "Y",
       "Y",
@@ -392,8 +392,8 @@
       "Docetaxel",
       "2026-04-08",
       "2026-04-09",
-      "2026-09-03",
-      "168",
+      "2026-08-27",
+      "161",
       "Y",
       "Y",
       "N",
@@ -472,8 +472,8 @@
       "Docetaxel",
       "2026-05-01",
       "2026-05-02",
-      "2026-10-17",
-      "189",
+      "2026-10-03",
+      "175",
       "Y",
       "Y",
       "N",
@@ -552,8 +552,8 @@
       "Docetaxel",
       "2026-05-17",
       "2026-05-18",
-      "2026-10-12",
-      "168",
+      "2026-09-28",
+      "154",
       "Y",
       "Y",
       "N",
@@ -632,8 +632,8 @@
       "Docetaxel",
       "2026-01-28",
       "2026-01-29",
-      "2026-08-06",
-      "210",
+      "2026-07-23",
+      "196",
       "Y",
       "Y",
       "N",
@@ -712,8 +712,8 @@
       "Docetaxel",
       "2026-03-08",
       "2026-03-09",
-      "2026-07-13",
-      "147",
+      "2026-06-29",
+      "133",
       "Y",
       "Y",
       "Y",
@@ -752,8 +752,8 @@
       "Docetaxel",
       "2026-03-24",
       "2026-03-25",
-      "2026-09-09",
-      "189",
+      "2026-08-26",
+      "175",
       "Y",
       "Y",
       "N",
@@ -832,8 +832,8 @@
       "Docetaxel",
       "2026-04-27",
       "2026-04-28",
-      "2026-10-13",
-      "189",
+      "2026-09-29",
+      "175",
       "Y",
       "Y",
       "N",
@@ -4275,14 +4275,14 @@
       "Docetaxel",
       null,
       "mean",
-      "176.75"
+      "170.625"
      ],
      [
       "DUR",
       "Docetaxel",
       null,
       "sd",
-      "36.592051881106165"
+      "37.37333681045654"
      ],
      [
       "DUR",
@@ -4392,7 +4392,7 @@
         ]
        },
        {
-        "text": "176.8 (36.59)",
+        "text": "170.6 (37.37)",
         "keys": [
          {
           "an": "DUR",
@@ -4463,7 +4463,7 @@
   },
   {
    "id": "T8",
-   "title": "Table 14.3.2: overview of treatment-emergent adverse events (safety population)",
+   "title": "Table 14.3.1: overview of treatment-emergent adverse events (safety population)",
    "kind": "ard",
    "area": "Safety",
    "ref": "SAP 9.5; ICH E3 section 12.2",
@@ -4879,7 +4879,7 @@
     ]
    },
    "display": {
-    "title": "Table 14.3.2 Overview of treatment-emergent adverse events",
+    "title": "Table 14.3.1 Overview of treatment-emergent adverse events",
     "population": "Safety population, as treated",
     "head": [
      "ONK-44 400 mg",
@@ -5222,7 +5222,7 @@
   },
   {
    "id": "T9",
-   "title": "Table 14.3.1: treatment-emergent adverse events by system class and preferred term",
+   "title": "Table 14.3.2: treatment-emergent adverse events by system class and preferred term",
    "kind": "ard",
    "area": "Safety",
    "ref": "SAP 9.5; ICH E3 section 12.2",
@@ -5528,28 +5528,28 @@
       "Docetaxel",
       "General and site of use",
       "n",
-      "13"
+      "12"
      ],
      [
       "SOC",
       "Docetaxel",
       "General and site of use",
       "pct",
-      "54.166666666666664"
+      "50"
      ],
      [
       "SOC",
       "Total",
       "General and site of use",
       "n",
-      "17"
+      "16"
      ],
      [
       "SOC",
       "Total",
       "General and site of use",
       "pct",
-      "40.476190476190474"
+      "38.095238095238095"
      ],
      [
       "PT",
@@ -5570,28 +5570,28 @@
       "Docetaxel",
       "General and site of use | Fatigue",
       "n",
-      "12"
+      "11"
      ],
      [
       "PT",
       "Docetaxel",
       "General and site of use | Fatigue",
       "pct",
-      "50"
+      "45.833333333333336"
      ],
      [
       "PT",
       "Total",
       "General and site of use | Fatigue",
       "n",
-      "15"
+      "14"
      ],
      [
       "PT",
       "Total",
       "General and site of use | Fatigue",
       "pct",
-      "35.714285714285715"
+      "33.333333333333336"
      ],
      [
       "PT",
@@ -6520,7 +6520,7 @@
     ]
    },
    "display": {
-    "title": "Table 14.3.1 Treatment-emergent adverse events by system class and preferred term",
+    "title": "Table 14.3.2 Treatment-emergent adverse events by system class and preferred term",
     "population": "Safety population",
     "head": [
      "ONK-44 400 mg",
@@ -6764,7 +6764,7 @@
         ]
        },
        {
-        "text": "13 (54.2)",
+        "text": "12 (50.0)",
         "keys": [
          {
           "an": "SOC",
@@ -6774,7 +6774,7 @@
         ]
        },
        {
-        "text": "17 (40.5)",
+        "text": "16 (38.1)",
         "keys": [
          {
           "an": "SOC",
@@ -6800,7 +6800,7 @@
         ]
        },
        {
-        "text": "12 (50.0)",
+        "text": "11 (45.8)",
         "keys": [
          {
           "an": "PT",
@@ -6810,7 +6810,7 @@
         ]
        },
        {
-        "text": "15 (35.7)",
+        "text": "14 (33.3)",
         "keys": [
          {
           "an": "PT",
@@ -8693,12 +8693,12 @@
    },
    {
     "id": "MTH_T8",
-    "name": "Table 14.3.2: overview of treatment-emergent adverse events (safety population)",
+    "name": "Table 14.3.1: overview of treatment-emergent adverse events (safety population)",
     "description": "Any TEAE; related; grade 3 or higher; serious; serious and related; leading to discontinuation; leading to interruption or dose reduction; fatal (grade 5); deaths (any cause). n (%). Columns: ONK-44 400 mg, Docetaxel, Total."
    },
    {
     "id": "MTH_T9",
-    "name": "Table 14.3.1: treatment-emergent adverse events by system class and preferred term",
+    "name": "Table 14.3.2: treatment-emergent adverse events by system class and preferred term",
     "description": "Participants with at least one TEAE; each system class with its preferred terms indented, by descending frequency in the Total column. n (%)."
    },
    {
@@ -8801,7 +8801,7 @@
    },
    {
     "id": "AN_T8",
-    "name": "Table 14.3.2: overview of treatment-emergent adverse events (safety population)",
+    "name": "Table 14.3.1: overview of treatment-emergent adverse events (safety population)",
     "analysisSetId": "AS_SAF",
     "methodId": "MTH_T8",
     "orderedGroupings": [
@@ -8814,7 +8814,7 @@
    },
    {
     "id": "AN_T9",
-    "name": "Table 14.3.1: treatment-emergent adverse events by system class and preferred term",
+    "name": "Table 14.3.2: treatment-emergent adverse events by system class and preferred term",
     "analysisSetId": "AS_SAF",
     "methodId": "MTH_T9",
     "orderedGroupings": [
@@ -8891,14 +8891,14 @@
    },
    {
     "id": "OUT_T8",
-    "name": "Table 14.3.2: overview of treatment-emergent adverse events (safety population)",
+    "name": "Table 14.3.1: overview of treatment-emergent adverse events (safety population)",
     "analysisIds": [
      "AN_T8"
     ]
    },
    {
     "id": "OUT_T9",
-    "name": "Table 14.3.1: treatment-emergent adverse events by system class and preferred term",
+    "name": "Table 14.3.2: treatment-emergent adverse events by system class and preferred term",
     "analysisIds": [
      "AN_T9"
     ]

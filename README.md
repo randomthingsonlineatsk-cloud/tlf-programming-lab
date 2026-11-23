@@ -19,9 +19,9 @@ cancer), from the SDTM Mapping Trainer's RECIST 1.1 hand-off (DM, DS, EX, TU, TR
   the cut-off, demographics, Kaplan-Meier medians in months with Brookmeyer-Crowley CIs, Cox hazard
   ratios and log-rank tests, response rates with Clopper-Pearson CIs, exposure, and the PFS
   Kaplan-Meier plot. Safety: ADAE (CTCAE-style grades, treatment-emergent from the first dose to
-  30 days after the last), TEAEs by system class and preferred term (Table 14.3.1), an overview
-  (Table 14.3.2: related, grade 3 or higher, serious, leading to discontinuation or to interruption
-  or dose reduction, fatal, and deaths), grade 3 or higher TEAEs by preferred term (Table 14.3.3)
+  30 days after the last), an overview (Table 14.3.1: related, grade 3 or higher, serious, leading
+  to discontinuation or to interruption or dose reduction, fatal, and deaths), TEAEs by system
+  class and preferred term (Table 14.3.2), grade 3 or higher TEAEs by preferred term (Table 14.3.3)
   and the serious adverse event listing (16.2.7). A test checks every cell against an independent JavaScript derivation (in the
   CSR & Narrative Studio's scripts); the outputs feed the Studio's oncology report.
 - **Safety chemistry** includes total bilirubin (BILI) beside ALT and AST, for liver screening.
