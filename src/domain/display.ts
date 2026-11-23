@@ -294,5 +294,16 @@ export const onkDisplays = (groups: string[]): Record<string, (f: Frame) => Disp
       return { title: 'Table 14.3.5 Extent of exposure', population: 'Safety population (all who took at least one dose), as treated', head: groups, groups,
         rows: [{ label: 'Duration of treatment (days)', cells: blank(groups) }, ...contRows(L, 'DUR', groups, null, 1)],
         footnotes: ['ONK-44: from the first to the last daily dose. Docetaxel: from the first infusion to 21 days after the last (one cycle).'] } },
+    T8: (fr) => { const L = lookup(fr)
+      const lab: [string, string][] = [['ANY', 'Any TEAE'], ['REL', 'TEAE related to study treatment'], ['GR3', 'TEAE of grade 3 or higher'], ['SER', 'Serious TEAE'], ['SERREL', 'Serious TEAE related to study treatment'], ['DISC', 'TEAE leading to discontinuation of study treatment'], ['MOD', 'TEAE leading to interruption or dose reduction'], ['FATAL', 'TEAE with a fatal outcome (grade 5)'], ['DEATH', 'Deaths (any cause) by the data cut-off']]
+      return { title: 'Table 14.3.2 Overview of treatment-emergent adverse events', population: 'Safety population, as treated', head: headN(L, gt), groups: gt,
+        rows: lab.map(([an, l]) => npctRow(L, l, an, gt)),
+        footnotes: ['Participants with at least one event of each kind, n (%). A participant is counted once in each row.', 'Treatment-emergent: starting on or after the first dose and up to 30 days after the last dose. Grades on a CTCAE-style scale (1 to 5). Disease progression is not an adverse event.', 'Deaths include those from disease progression.'] } },
+    T9: aeTable(groups, 'Table 14.3.1 Treatment-emergent adverse events by system class and preferred term'),
+    T10: (fr) => { const L = lookup(fr)
+      const rows: Display['rows'] = [npctRow(L, 'Participants with at least one TEAE of grade 3 or higher', 'ANY', gt)]
+      for (const pt of cats(fr, 'PT').sort(byTotal(L, 'PT'))) rows.push(npctRow(L, pt, 'PT', gt, pt, 1))
+      return { title: 'Table 14.3.3 Treatment-emergent adverse events of grade 3 or higher by preferred term', population: 'Safety population, as treated', head: headN(L, gt), groups: gt, rows,
+        footnotes: ['A participant is counted once in each row, at the highest grade.', 'Treatment-emergent: starting on or after the first dose and up to 30 days after the last dose.', 'Coded with the Study Medical Dictionary (training).'] } },
   }
 }

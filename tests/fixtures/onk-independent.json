@@ -4462,6 +4462,3921 @@
    }
   },
   {
+   "id": "T8",
+   "title": "Table 14.3.2: overview of treatment-emergent adverse events (safety population)",
+   "kind": "ard",
+   "area": "Safety",
+   "ref": "SAP 9.5; ICH E3 section 12.2",
+   "shell": "Any TEAE; related; grade 3 or higher; serious; serious and related; leading to discontinuation; leading to interruption or dose reduction; fatal (grade 5); deaths (any cause). n (%). Columns: ONK-44 400 mg, Docetaxel, Total.",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "POP",
+      "ONK-44 400 mg",
+      null,
+      "N",
+      "18"
+     ],
+     [
+      "POP",
+      "Docetaxel",
+      null,
+      "N",
+      "24"
+     ],
+     [
+      "POP",
+      "Total",
+      null,
+      "N",
+      "42"
+     ],
+     [
+      "ANY",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "17"
+     ],
+     [
+      "ANY",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "94.44444444444444"
+     ],
+     [
+      "ANY",
+      "Docetaxel",
+      null,
+      "n",
+      "22"
+     ],
+     [
+      "ANY",
+      "Docetaxel",
+      null,
+      "pct",
+      "91.66666666666667"
+     ],
+     [
+      "ANY",
+      "Total",
+      null,
+      "n",
+      "39"
+     ],
+     [
+      "ANY",
+      "Total",
+      null,
+      "pct",
+      "92.85714285714286"
+     ],
+     [
+      "REL",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "16"
+     ],
+     [
+      "REL",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "88.88888888888889"
+     ],
+     [
+      "REL",
+      "Docetaxel",
+      null,
+      "n",
+      "22"
+     ],
+     [
+      "REL",
+      "Docetaxel",
+      null,
+      "pct",
+      "91.66666666666667"
+     ],
+     [
+      "REL",
+      "Total",
+      null,
+      "n",
+      "38"
+     ],
+     [
+      "REL",
+      "Total",
+      null,
+      "pct",
+      "90.47619047619048"
+     ],
+     [
+      "GR3",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "4"
+     ],
+     [
+      "GR3",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "22.22222222222222"
+     ],
+     [
+      "GR3",
+      "Docetaxel",
+      null,
+      "n",
+      "13"
+     ],
+     [
+      "GR3",
+      "Docetaxel",
+      null,
+      "pct",
+      "54.166666666666664"
+     ],
+     [
+      "GR3",
+      "Total",
+      null,
+      "n",
+      "17"
+     ],
+     [
+      "GR3",
+      "Total",
+      null,
+      "pct",
+      "40.476190476190474"
+     ],
+     [
+      "SER",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "2"
+     ],
+     [
+      "SER",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "11.11111111111111"
+     ],
+     [
+      "SER",
+      "Docetaxel",
+      null,
+      "n",
+      "3"
+     ],
+     [
+      "SER",
+      "Docetaxel",
+      null,
+      "pct",
+      "12.5"
+     ],
+     [
+      "SER",
+      "Total",
+      null,
+      "n",
+      "5"
+     ],
+     [
+      "SER",
+      "Total",
+      null,
+      "pct",
+      "11.904761904761905"
+     ],
+     [
+      "SERREL",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "2"
+     ],
+     [
+      "SERREL",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "11.11111111111111"
+     ],
+     [
+      "SERREL",
+      "Docetaxel",
+      null,
+      "n",
+      "2"
+     ],
+     [
+      "SERREL",
+      "Docetaxel",
+      null,
+      "pct",
+      "8.333333333333334"
+     ],
+     [
+      "SERREL",
+      "Total",
+      null,
+      "n",
+      "4"
+     ],
+     [
+      "SERREL",
+      "Total",
+      null,
+      "pct",
+      "9.523809523809524"
+     ],
+     [
+      "DISC",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "0"
+     ],
+     [
+      "DISC",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "0"
+     ],
+     [
+      "DISC",
+      "Docetaxel",
+      null,
+      "n",
+      "0"
+     ],
+     [
+      "DISC",
+      "Docetaxel",
+      null,
+      "pct",
+      "0"
+     ],
+     [
+      "DISC",
+      "Total",
+      null,
+      "n",
+      "0"
+     ],
+     [
+      "DISC",
+      "Total",
+      null,
+      "pct",
+      "0"
+     ],
+     [
+      "MOD",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "4"
+     ],
+     [
+      "MOD",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "22.22222222222222"
+     ],
+     [
+      "MOD",
+      "Docetaxel",
+      null,
+      "n",
+      "12"
+     ],
+     [
+      "MOD",
+      "Docetaxel",
+      null,
+      "pct",
+      "50"
+     ],
+     [
+      "MOD",
+      "Total",
+      null,
+      "n",
+      "16"
+     ],
+     [
+      "MOD",
+      "Total",
+      null,
+      "pct",
+      "38.095238095238095"
+     ],
+     [
+      "FATAL",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "0"
+     ],
+     [
+      "FATAL",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "0"
+     ],
+     [
+      "FATAL",
+      "Docetaxel",
+      null,
+      "n",
+      "0"
+     ],
+     [
+      "FATAL",
+      "Docetaxel",
+      null,
+      "pct",
+      "0"
+     ],
+     [
+      "FATAL",
+      "Total",
+      null,
+      "n",
+      "0"
+     ],
+     [
+      "FATAL",
+      "Total",
+      null,
+      "pct",
+      "0"
+     ],
+     [
+      "DEATH",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "3"
+     ],
+     [
+      "DEATH",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "DEATH",
+      "Docetaxel",
+      null,
+      "n",
+      "5"
+     ],
+     [
+      "DEATH",
+      "Docetaxel",
+      null,
+      "pct",
+      "20.833333333333332"
+     ],
+     [
+      "DEATH",
+      "Total",
+      null,
+      "n",
+      "8"
+     ],
+     [
+      "DEATH",
+      "Total",
+      null,
+      "pct",
+      "19.047619047619047"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.3.2 Overview of treatment-emergent adverse events",
+    "population": "Safety population, as treated",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "rows": [
+     {
+      "label": "Any TEAE",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "17 (94.4)",
+        "keys": [
+         {
+          "an": "ANY",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "22 (91.7)",
+        "keys": [
+         {
+          "an": "ANY",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "39 (92.9)",
+        "keys": [
+         {
+          "an": "ANY",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "TEAE related to study treatment",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "16 (88.9)",
+        "keys": [
+         {
+          "an": "REL",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "22 (91.7)",
+        "keys": [
+         {
+          "an": "REL",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "38 (90.5)",
+        "keys": [
+         {
+          "an": "REL",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "TEAE of grade 3 or higher",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "4 (22.2)",
+        "keys": [
+         {
+          "an": "GR3",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "13 (54.2)",
+        "keys": [
+         {
+          "an": "GR3",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "17 (40.5)",
+        "keys": [
+         {
+          "an": "GR3",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Serious TEAE",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "2 (11.1)",
+        "keys": [
+         {
+          "an": "SER",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "3 (12.5)",
+        "keys": [
+         {
+          "an": "SER",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "5 (11.9)",
+        "keys": [
+         {
+          "an": "SER",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Serious TEAE related to study treatment",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "2 (11.1)",
+        "keys": [
+         {
+          "an": "SERREL",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "2 (8.3)",
+        "keys": [
+         {
+          "an": "SERREL",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "4 (9.5)",
+        "keys": [
+         {
+          "an": "SERREL",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "TEAE leading to discontinuation of study treatment",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "DISC",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "DISC",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "DISC",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "TEAE leading to interruption or dose reduction",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "4 (22.2)",
+        "keys": [
+         {
+          "an": "MOD",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "12 (50.0)",
+        "keys": [
+         {
+          "an": "MOD",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "16 (38.1)",
+        "keys": [
+         {
+          "an": "MOD",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "TEAE with a fatal outcome (grade 5)",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "FATAL",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "FATAL",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "FATAL",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Deaths (any cause) by the data cut-off",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "3 (16.7)",
+        "keys": [
+         {
+          "an": "DEATH",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "5 (20.8)",
+        "keys": [
+         {
+          "an": "DEATH",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "8 (19.0)",
+        "keys": [
+         {
+          "an": "DEATH",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "footnotes": []
+   }
+  },
+  {
+   "id": "T9",
+   "title": "Table 14.3.1: treatment-emergent adverse events by system class and preferred term",
+   "kind": "ard",
+   "area": "Safety",
+   "ref": "SAP 9.5; ICH E3 section 12.2",
+   "shell": "Participants with at least one TEAE; each system class with its preferred terms indented, by descending frequency in the Total column. n (%).",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "POP",
+      "ONK-44 400 mg",
+      null,
+      "N",
+      "18"
+     ],
+     [
+      "POP",
+      "Docetaxel",
+      null,
+      "N",
+      "24"
+     ],
+     [
+      "POP",
+      "Total",
+      null,
+      "N",
+      "42"
+     ],
+     [
+      "ANY",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "17"
+     ],
+     [
+      "ANY",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "94.44444444444444"
+     ],
+     [
+      "ANY",
+      "Docetaxel",
+      null,
+      "n",
+      "22"
+     ],
+     [
+      "ANY",
+      "Docetaxel",
+      null,
+      "pct",
+      "91.66666666666667"
+     ],
+     [
+      "ANY",
+      "Total",
+      null,
+      "n",
+      "39"
+     ],
+     [
+      "ANY",
+      "Total",
+      null,
+      "pct",
+      "92.85714285714286"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Digestive system",
+      "n",
+      "14"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Digestive system",
+      "pct",
+      "77.77777777777777"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Digestive system",
+      "n",
+      "13"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Digestive system",
+      "pct",
+      "54.166666666666664"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Digestive system",
+      "n",
+      "27"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Digestive system",
+      "pct",
+      "64.28571428571429"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Digestive system | Diarrhoea",
+      "n",
+      "10"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Digestive system | Diarrhoea",
+      "pct",
+      "55.55555555555556"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Digestive system | Diarrhoea",
+      "n",
+      "5"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Digestive system | Diarrhoea",
+      "pct",
+      "20.833333333333332"
+     ],
+     [
+      "PT",
+      "Total",
+      "Digestive system | Diarrhoea",
+      "n",
+      "15"
+     ],
+     [
+      "PT",
+      "Total",
+      "Digestive system | Diarrhoea",
+      "pct",
+      "35.714285714285715"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Digestive system | Nausea",
+      "n",
+      "5"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Digestive system | Nausea",
+      "pct",
+      "27.77777777777778"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Digestive system | Nausea",
+      "n",
+      "4"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Digestive system | Nausea",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "PT",
+      "Total",
+      "Digestive system | Nausea",
+      "n",
+      "9"
+     ],
+     [
+      "PT",
+      "Total",
+      "Digestive system | Nausea",
+      "pct",
+      "21.428571428571427"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Digestive system | Constipation",
+      "n",
+      "3"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Digestive system | Constipation",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Digestive system | Constipation",
+      "n",
+      "5"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Digestive system | Constipation",
+      "pct",
+      "20.833333333333332"
+     ],
+     [
+      "PT",
+      "Total",
+      "Digestive system | Constipation",
+      "n",
+      "8"
+     ],
+     [
+      "PT",
+      "Total",
+      "Digestive system | Constipation",
+      "pct",
+      "19.047619047619047"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Digestive system | Stomatitis",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Digestive system | Stomatitis",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Digestive system | Stomatitis",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Digestive system | Stomatitis",
+      "pct",
+      "8.333333333333334"
+     ],
+     [
+      "PT",
+      "Total",
+      "Digestive system | Stomatitis",
+      "n",
+      "3"
+     ],
+     [
+      "PT",
+      "Total",
+      "Digestive system | Stomatitis",
+      "pct",
+      "7.142857142857143"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "General and site of use",
+      "n",
+      "4"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "General and site of use",
+      "pct",
+      "22.22222222222222"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "General and site of use",
+      "n",
+      "13"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "General and site of use",
+      "pct",
+      "54.166666666666664"
+     ],
+     [
+      "SOC",
+      "Total",
+      "General and site of use",
+      "n",
+      "17"
+     ],
+     [
+      "SOC",
+      "Total",
+      "General and site of use",
+      "pct",
+      "40.476190476190474"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "General and site of use | Fatigue",
+      "n",
+      "3"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "General and site of use | Fatigue",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "General and site of use | Fatigue",
+      "n",
+      "12"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "General and site of use | Fatigue",
+      "pct",
+      "50"
+     ],
+     [
+      "PT",
+      "Total",
+      "General and site of use | Fatigue",
+      "n",
+      "15"
+     ],
+     [
+      "PT",
+      "Total",
+      "General and site of use | Fatigue",
+      "pct",
+      "35.714285714285715"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "General and site of use | Fever",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "General and site of use | Fever",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "General and site of use | Fever",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "General and site of use | Fever",
+      "pct",
+      "8.333333333333334"
+     ],
+     [
+      "PT",
+      "Total",
+      "General and site of use | Fever",
+      "n",
+      "3"
+     ],
+     [
+      "PT",
+      "Total",
+      "General and site of use | Fever",
+      "pct",
+      "7.142857142857143"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Skin",
+      "n",
+      "6"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Skin",
+      "pct",
+      "33.333333333333336"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Skin",
+      "n",
+      "10"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Skin",
+      "pct",
+      "41.666666666666664"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Skin",
+      "n",
+      "16"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Skin",
+      "pct",
+      "38.095238095238095"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Skin | Hair loss",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Skin | Hair loss",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Skin | Hair loss",
+      "n",
+      "10"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Skin | Hair loss",
+      "pct",
+      "41.666666666666664"
+     ],
+     [
+      "PT",
+      "Total",
+      "Skin | Hair loss",
+      "n",
+      "10"
+     ],
+     [
+      "PT",
+      "Total",
+      "Skin | Hair loss",
+      "pct",
+      "23.80952380952381"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Skin | Rash",
+      "n",
+      "6"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Skin | Rash",
+      "pct",
+      "33.333333333333336"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Skin | Rash",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Skin | Rash",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Total",
+      "Skin | Rash",
+      "n",
+      "6"
+     ],
+     [
+      "PT",
+      "Total",
+      "Skin | Rash",
+      "pct",
+      "14.285714285714286"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Blood and lymph",
+      "n",
+      "0"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Blood and lymph",
+      "pct",
+      "0"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Blood and lymph",
+      "n",
+      "15"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Blood and lymph",
+      "pct",
+      "62.5"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Blood and lymph",
+      "n",
+      "15"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Blood and lymph",
+      "pct",
+      "35.714285714285715"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Blood and lymph | Neutropenia",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Blood and lymph | Neutropenia",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Blood and lymph | Neutropenia",
+      "n",
+      "11"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Blood and lymph | Neutropenia",
+      "pct",
+      "45.833333333333336"
+     ],
+     [
+      "PT",
+      "Total",
+      "Blood and lymph | Neutropenia",
+      "n",
+      "11"
+     ],
+     [
+      "PT",
+      "Total",
+      "Blood and lymph | Neutropenia",
+      "pct",
+      "26.19047619047619"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Blood and lymph | Anaemia",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Blood and lymph | Anaemia",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Blood and lymph | Anaemia",
+      "n",
+      "5"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Blood and lymph | Anaemia",
+      "pct",
+      "20.833333333333332"
+     ],
+     [
+      "PT",
+      "Total",
+      "Blood and lymph | Anaemia",
+      "n",
+      "5"
+     ],
+     [
+      "PT",
+      "Total",
+      "Blood and lymph | Anaemia",
+      "pct",
+      "11.904761904761905"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Blood and lymph | Febrile neutropenia",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Blood and lymph | Febrile neutropenia",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Blood and lymph | Febrile neutropenia",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Blood and lymph | Febrile neutropenia",
+      "pct",
+      "8.333333333333334"
+     ],
+     [
+      "PT",
+      "Total",
+      "Blood and lymph | Febrile neutropenia",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Total",
+      "Blood and lymph | Febrile neutropenia",
+      "pct",
+      "4.761904761904762"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Lungs and airways",
+      "n",
+      "4"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Lungs and airways",
+      "pct",
+      "22.22222222222222"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Lungs and airways",
+      "n",
+      "9"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Lungs and airways",
+      "pct",
+      "37.5"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Lungs and airways",
+      "n",
+      "13"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Lungs and airways",
+      "pct",
+      "30.952380952380953"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Lungs and airways | Cough",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Lungs and airways | Cough",
+      "pct",
+      "11.11111111111111"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Lungs and airways | Cough",
+      "n",
+      "5"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Lungs and airways | Cough",
+      "pct",
+      "20.833333333333332"
+     ],
+     [
+      "PT",
+      "Total",
+      "Lungs and airways | Cough",
+      "n",
+      "7"
+     ],
+     [
+      "PT",
+      "Total",
+      "Lungs and airways | Cough",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Lungs and airways | Breathlessness",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Lungs and airways | Breathlessness",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Lungs and airways | Breathlessness",
+      "n",
+      "5"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Lungs and airways | Breathlessness",
+      "pct",
+      "20.833333333333332"
+     ],
+     [
+      "PT",
+      "Total",
+      "Lungs and airways | Breathlessness",
+      "n",
+      "6"
+     ],
+     [
+      "PT",
+      "Total",
+      "Lungs and airways | Breathlessness",
+      "pct",
+      "14.285714285714286"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Lungs and airways | Pneumonitis",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Lungs and airways | Pneumonitis",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Lungs and airways | Pneumonitis",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Lungs and airways | Pneumonitis",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Total",
+      "Lungs and airways | Pneumonitis",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "Total",
+      "Lungs and airways | Pneumonitis",
+      "pct",
+      "2.380952380952381"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Metabolism and nutrition",
+      "n",
+      "7"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Metabolism and nutrition",
+      "pct",
+      "38.888888888888886"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Metabolism and nutrition",
+      "n",
+      "4"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Metabolism and nutrition",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Metabolism and nutrition",
+      "n",
+      "11"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Metabolism and nutrition",
+      "pct",
+      "26.19047619047619"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Metabolism and nutrition | Decreased appetite",
+      "n",
+      "7"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Metabolism and nutrition | Decreased appetite",
+      "pct",
+      "38.888888888888886"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Metabolism and nutrition | Decreased appetite",
+      "n",
+      "4"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Metabolism and nutrition | Decreased appetite",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "PT",
+      "Total",
+      "Metabolism and nutrition | Decreased appetite",
+      "n",
+      "11"
+     ],
+     [
+      "PT",
+      "Total",
+      "Metabolism and nutrition | Decreased appetite",
+      "pct",
+      "26.19047619047619"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Brain and nerves",
+      "n",
+      "0"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Brain and nerves",
+      "pct",
+      "0"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Brain and nerves",
+      "n",
+      "4"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Brain and nerves",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Brain and nerves",
+      "n",
+      "4"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Brain and nerves",
+      "pct",
+      "9.523809523809524"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Brain and nerves | Peripheral neuropathy",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Brain and nerves | Peripheral neuropathy",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Brain and nerves | Peripheral neuropathy",
+      "n",
+      "4"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Brain and nerves | Peripheral neuropathy",
+      "pct",
+      "16.666666666666668"
+     ],
+     [
+      "PT",
+      "Total",
+      "Brain and nerves | Peripheral neuropathy",
+      "n",
+      "4"
+     ],
+     [
+      "PT",
+      "Total",
+      "Brain and nerves | Peripheral neuropathy",
+      "pct",
+      "9.523809523809524"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Muscles, bones and joints",
+      "n",
+      "1"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Muscles, bones and joints",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Muscles, bones and joints",
+      "n",
+      "2"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Muscles, bones and joints",
+      "pct",
+      "8.333333333333334"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Muscles, bones and joints",
+      "n",
+      "3"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Muscles, bones and joints",
+      "pct",
+      "7.142857142857143"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Muscles, bones and joints | Back pain",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Muscles, bones and joints | Back pain",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Muscles, bones and joints | Back pain",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Muscles, bones and joints | Back pain",
+      "pct",
+      "8.333333333333334"
+     ],
+     [
+      "PT",
+      "Total",
+      "Muscles, bones and joints | Back pain",
+      "n",
+      "3"
+     ],
+     [
+      "PT",
+      "Total",
+      "Muscles, bones and joints | Back pain",
+      "pct",
+      "7.142857142857143"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Infections",
+      "n",
+      "1"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Infections",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Infections",
+      "n",
+      "1"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Infections",
+      "pct",
+      "4.166666666666667"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Infections",
+      "n",
+      "2"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Infections",
+      "pct",
+      "4.761904761904762"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Infections | Pneumonia",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Infections | Pneumonia",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Infections | Pneumonia",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Infections | Pneumonia",
+      "pct",
+      "4.166666666666667"
+     ],
+     [
+      "PT",
+      "Total",
+      "Infections | Pneumonia",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Total",
+      "Infections | Pneumonia",
+      "pct",
+      "4.761904761904762"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Test results",
+      "n",
+      "2"
+     ],
+     [
+      "SOC",
+      "ONK-44 400 mg",
+      "Test results",
+      "pct",
+      "11.11111111111111"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Test results",
+      "n",
+      "0"
+     ],
+     [
+      "SOC",
+      "Docetaxel",
+      "Test results",
+      "pct",
+      "0"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Test results",
+      "n",
+      "2"
+     ],
+     [
+      "SOC",
+      "Total",
+      "Test results",
+      "pct",
+      "4.761904761904762"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Test results | Liver enzymes raised",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Test results | Liver enzymes raised",
+      "pct",
+      "11.11111111111111"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Test results | Liver enzymes raised",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Test results | Liver enzymes raised",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Total",
+      "Test results | Liver enzymes raised",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Total",
+      "Test results | Liver enzymes raised",
+      "pct",
+      "4.761904761904762"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.3.1 Treatment-emergent adverse events by system class and preferred term",
+    "population": "Safety population",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "rows": [
+     {
+      "label": "Participants with at least one TEAE",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "17 (94.4)",
+        "keys": [
+         {
+          "an": "ANY",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "22 (91.7)",
+        "keys": [
+         {
+          "an": "ANY",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "39 (92.9)",
+        "keys": [
+         {
+          "an": "ANY",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Digestive system",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "14 (77.8)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "Digestive system"
+         }
+        ]
+       },
+       {
+        "text": "13 (54.2)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "Digestive system"
+         }
+        ]
+       },
+       {
+        "text": "27 (64.3)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "Digestive system"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Diarrhoea",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "10 (55.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Digestive system | Diarrhoea"
+         }
+        ]
+       },
+       {
+        "text": "5 (20.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Digestive system | Diarrhoea"
+         }
+        ]
+       },
+       {
+        "text": "15 (35.7)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Digestive system | Diarrhoea"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Nausea",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "5 (27.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Digestive system | Nausea"
+         }
+        ]
+       },
+       {
+        "text": "4 (16.7)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Digestive system | Nausea"
+         }
+        ]
+       },
+       {
+        "text": "9 (21.4)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Digestive system | Nausea"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Constipation",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "3 (16.7)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Digestive system | Constipation"
+         }
+        ]
+       },
+       {
+        "text": "5 (20.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Digestive system | Constipation"
+         }
+        ]
+       },
+       {
+        "text": "8 (19.0)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Digestive system | Constipation"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Stomatitis",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Digestive system | Stomatitis"
+         }
+        ]
+       },
+       {
+        "text": "2 (8.3)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Digestive system | Stomatitis"
+         }
+        ]
+       },
+       {
+        "text": "3 (7.1)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Digestive system | Stomatitis"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "General and site of use",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "4 (22.2)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "General and site of use"
+         }
+        ]
+       },
+       {
+        "text": "13 (54.2)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "General and site of use"
+         }
+        ]
+       },
+       {
+        "text": "17 (40.5)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "General and site of use"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Fatigue",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "3 (16.7)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "General and site of use | Fatigue"
+         }
+        ]
+       },
+       {
+        "text": "12 (50.0)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "General and site of use | Fatigue"
+         }
+        ]
+       },
+       {
+        "text": "15 (35.7)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "General and site of use | Fatigue"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Fever",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "General and site of use | Fever"
+         }
+        ]
+       },
+       {
+        "text": "2 (8.3)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "General and site of use | Fever"
+         }
+        ]
+       },
+       {
+        "text": "3 (7.1)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "General and site of use | Fever"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Skin",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "6 (33.3)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "Skin"
+         }
+        ]
+       },
+       {
+        "text": "10 (41.7)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "Skin"
+         }
+        ]
+       },
+       {
+        "text": "16 (38.1)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "Skin"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Hair loss",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Skin | Hair loss"
+         }
+        ]
+       },
+       {
+        "text": "10 (41.7)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Skin | Hair loss"
+         }
+        ]
+       },
+       {
+        "text": "10 (23.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Skin | Hair loss"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Rash",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "6 (33.3)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Skin | Rash"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Skin | Rash"
+         }
+        ]
+       },
+       {
+        "text": "6 (14.3)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Skin | Rash"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Blood and lymph",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "Blood and lymph"
+         }
+        ]
+       },
+       {
+        "text": "15 (62.5)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "Blood and lymph"
+         }
+        ]
+       },
+       {
+        "text": "15 (35.7)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "Blood and lymph"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Neutropenia",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Blood and lymph | Neutropenia"
+         }
+        ]
+       },
+       {
+        "text": "11 (45.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Blood and lymph | Neutropenia"
+         }
+        ]
+       },
+       {
+        "text": "11 (26.2)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Blood and lymph | Neutropenia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Anaemia",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Blood and lymph | Anaemia"
+         }
+        ]
+       },
+       {
+        "text": "5 (20.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Blood and lymph | Anaemia"
+         }
+        ]
+       },
+       {
+        "text": "5 (11.9)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Blood and lymph | Anaemia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Febrile neutropenia",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Blood and lymph | Febrile neutropenia"
+         }
+        ]
+       },
+       {
+        "text": "2 (8.3)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Blood and lymph | Febrile neutropenia"
+         }
+        ]
+       },
+       {
+        "text": "2 (4.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Blood and lymph | Febrile neutropenia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Lungs and airways",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "4 (22.2)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "Lungs and airways"
+         }
+        ]
+       },
+       {
+        "text": "9 (37.5)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "Lungs and airways"
+         }
+        ]
+       },
+       {
+        "text": "13 (31.0)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "Lungs and airways"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Cough",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "2 (11.1)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Lungs and airways | Cough"
+         }
+        ]
+       },
+       {
+        "text": "5 (20.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Lungs and airways | Cough"
+         }
+        ]
+       },
+       {
+        "text": "7 (16.7)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Lungs and airways | Cough"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Breathlessness",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Lungs and airways | Breathlessness"
+         }
+        ]
+       },
+       {
+        "text": "5 (20.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Lungs and airways | Breathlessness"
+         }
+        ]
+       },
+       {
+        "text": "6 (14.3)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Lungs and airways | Breathlessness"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Pneumonitis",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Lungs and airways | Pneumonitis"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Lungs and airways | Pneumonitis"
+         }
+        ]
+       },
+       {
+        "text": "1 (2.4)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Lungs and airways | Pneumonitis"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Metabolism and nutrition",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "7 (38.9)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "Metabolism and nutrition"
+         }
+        ]
+       },
+       {
+        "text": "4 (16.7)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "Metabolism and nutrition"
+         }
+        ]
+       },
+       {
+        "text": "11 (26.2)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "Metabolism and nutrition"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Decreased appetite",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "7 (38.9)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Metabolism and nutrition | Decreased appetite"
+         }
+        ]
+       },
+       {
+        "text": "4 (16.7)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Metabolism and nutrition | Decreased appetite"
+         }
+        ]
+       },
+       {
+        "text": "11 (26.2)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Metabolism and nutrition | Decreased appetite"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Brain and nerves",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "Brain and nerves"
+         }
+        ]
+       },
+       {
+        "text": "4 (16.7)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "Brain and nerves"
+         }
+        ]
+       },
+       {
+        "text": "4 (9.5)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "Brain and nerves"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Peripheral neuropathy",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Brain and nerves | Peripheral neuropathy"
+         }
+        ]
+       },
+       {
+        "text": "4 (16.7)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Brain and nerves | Peripheral neuropathy"
+         }
+        ]
+       },
+       {
+        "text": "4 (9.5)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Brain and nerves | Peripheral neuropathy"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Muscles, bones and joints",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "Muscles, bones and joints"
+         }
+        ]
+       },
+       {
+        "text": "2 (8.3)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "Muscles, bones and joints"
+         }
+        ]
+       },
+       {
+        "text": "3 (7.1)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "Muscles, bones and joints"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Back pain",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Muscles, bones and joints | Back pain"
+         }
+        ]
+       },
+       {
+        "text": "2 (8.3)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Muscles, bones and joints | Back pain"
+         }
+        ]
+       },
+       {
+        "text": "3 (7.1)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Muscles, bones and joints | Back pain"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Infections",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "Infections"
+         }
+        ]
+       },
+       {
+        "text": "1 (4.2)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "Infections"
+         }
+        ]
+       },
+       {
+        "text": "2 (4.8)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "Infections"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Pneumonia",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Infections | Pneumonia"
+         }
+        ]
+       },
+       {
+        "text": "1 (4.2)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Infections | Pneumonia"
+         }
+        ]
+       },
+       {
+        "text": "2 (4.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Infections | Pneumonia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Test results",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "2 (11.1)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "ONK-44 400 mg",
+          "cat": "Test results"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Docetaxel",
+          "cat": "Test results"
+         }
+        ]
+       },
+       {
+        "text": "2 (4.8)",
+        "keys": [
+         {
+          "an": "SOC",
+          "g": "Total",
+          "cat": "Test results"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Liver enzymes raised",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "2 (11.1)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Test results | Liver enzymes raised"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Test results | Liver enzymes raised"
+         }
+        ]
+       },
+       {
+        "text": "2 (4.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Test results | Liver enzymes raised"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "footnotes": []
+   }
+  },
+  {
+   "id": "T10",
+   "title": "Table 14.3.3: treatment-emergent adverse events of grade 3 or higher by preferred term",
+   "kind": "ard",
+   "area": "Safety",
+   "ref": "SAP 9.5; ICH E3 section 12.2",
+   "shell": "Participants with at least one grade 3 or higher TEAE; each preferred term by descending frequency in the Total column. n (%).",
+   "frame": {
+    "columns": [
+     "ANALYSIS",
+     "GROUP",
+     "CATEGORY",
+     "STAT",
+     "VALUE"
+    ],
+    "rows": [
+     [
+      "POP",
+      "ONK-44 400 mg",
+      null,
+      "N",
+      "18"
+     ],
+     [
+      "POP",
+      "Docetaxel",
+      null,
+      "N",
+      "24"
+     ],
+     [
+      "POP",
+      "Total",
+      null,
+      "N",
+      "42"
+     ],
+     [
+      "ANY",
+      "ONK-44 400 mg",
+      null,
+      "n",
+      "4"
+     ],
+     [
+      "ANY",
+      "ONK-44 400 mg",
+      null,
+      "pct",
+      "22.22222222222222"
+     ],
+     [
+      "ANY",
+      "Docetaxel",
+      null,
+      "n",
+      "13"
+     ],
+     [
+      "ANY",
+      "Docetaxel",
+      null,
+      "pct",
+      "54.166666666666664"
+     ],
+     [
+      "ANY",
+      "Total",
+      null,
+      "n",
+      "17"
+     ],
+     [
+      "ANY",
+      "Total",
+      null,
+      "pct",
+      "40.476190476190474"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Neutropenia",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Neutropenia",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Neutropenia",
+      "n",
+      "11"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Neutropenia",
+      "pct",
+      "45.833333333333336"
+     ],
+     [
+      "PT",
+      "Total",
+      "Neutropenia",
+      "n",
+      "11"
+     ],
+     [
+      "PT",
+      "Total",
+      "Neutropenia",
+      "pct",
+      "26.19047619047619"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Diarrhoea",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Diarrhoea",
+      "pct",
+      "11.11111111111111"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Diarrhoea",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Diarrhoea",
+      "pct",
+      "4.166666666666667"
+     ],
+     [
+      "PT",
+      "Total",
+      "Diarrhoea",
+      "n",
+      "3"
+     ],
+     [
+      "PT",
+      "Total",
+      "Diarrhoea",
+      "pct",
+      "7.142857142857143"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Decreased appetite",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Decreased appetite",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Decreased appetite",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Decreased appetite",
+      "pct",
+      "8.333333333333334"
+     ],
+     [
+      "PT",
+      "Total",
+      "Decreased appetite",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Total",
+      "Decreased appetite",
+      "pct",
+      "4.761904761904762"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Febrile neutropenia",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Febrile neutropenia",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Febrile neutropenia",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Febrile neutropenia",
+      "pct",
+      "8.333333333333334"
+     ],
+     [
+      "PT",
+      "Total",
+      "Febrile neutropenia",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Total",
+      "Febrile neutropenia",
+      "pct",
+      "4.761904761904762"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Pneumonia",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Pneumonia",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Pneumonia",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Pneumonia",
+      "pct",
+      "4.166666666666667"
+     ],
+     [
+      "PT",
+      "Total",
+      "Pneumonia",
+      "n",
+      "2"
+     ],
+     [
+      "PT",
+      "Total",
+      "Pneumonia",
+      "pct",
+      "4.761904761904762"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Nausea",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Nausea",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Nausea",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Nausea",
+      "pct",
+      "4.166666666666667"
+     ],
+     [
+      "PT",
+      "Total",
+      "Nausea",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "Total",
+      "Nausea",
+      "pct",
+      "2.380952380952381"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Pneumonitis",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Pneumonitis",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Pneumonitis",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Pneumonitis",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Total",
+      "Pneumonitis",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "Total",
+      "Pneumonitis",
+      "pct",
+      "2.380952380952381"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Rash",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "ONK-44 400 mg",
+      "Rash",
+      "pct",
+      "5.555555555555555"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Rash",
+      "n",
+      "0"
+     ],
+     [
+      "PT",
+      "Docetaxel",
+      "Rash",
+      "pct",
+      "0"
+     ],
+     [
+      "PT",
+      "Total",
+      "Rash",
+      "n",
+      "1"
+     ],
+     [
+      "PT",
+      "Total",
+      "Rash",
+      "pct",
+      "2.380952380952381"
+     ]
+    ]
+   },
+   "display": {
+    "title": "Table 14.3.3 Treatment-emergent adverse events of grade 3 or higher by preferred term",
+    "population": "Safety population, as treated",
+    "head": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "groups": [
+     "ONK-44 400 mg",
+     "Docetaxel",
+     "Total"
+    ],
+    "rows": [
+     {
+      "label": "Participants with at least one TEAE of grade 3 or higher",
+      "indent": 0,
+      "cells": [
+       {
+        "text": "4 (22.2)",
+        "keys": [
+         {
+          "an": "ANY",
+          "g": "ONK-44 400 mg",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "13 (54.2)",
+        "keys": [
+         {
+          "an": "ANY",
+          "g": "Docetaxel",
+          "cat": null
+         }
+        ]
+       },
+       {
+        "text": "17 (40.5)",
+        "keys": [
+         {
+          "an": "ANY",
+          "g": "Total",
+          "cat": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Neutropenia",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Neutropenia"
+         }
+        ]
+       },
+       {
+        "text": "11 (45.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Neutropenia"
+         }
+        ]
+       },
+       {
+        "text": "11 (26.2)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Neutropenia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Diarrhoea",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "2 (11.1)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Diarrhoea"
+         }
+        ]
+       },
+       {
+        "text": "1 (4.2)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Diarrhoea"
+         }
+        ]
+       },
+       {
+        "text": "3 (7.1)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Diarrhoea"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Decreased appetite",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Decreased appetite"
+         }
+        ]
+       },
+       {
+        "text": "2 (8.3)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Decreased appetite"
+         }
+        ]
+       },
+       {
+        "text": "2 (4.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Decreased appetite"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Febrile neutropenia",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Febrile neutropenia"
+         }
+        ]
+       },
+       {
+        "text": "2 (8.3)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Febrile neutropenia"
+         }
+        ]
+       },
+       {
+        "text": "2 (4.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Febrile neutropenia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Pneumonia",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Pneumonia"
+         }
+        ]
+       },
+       {
+        "text": "1 (4.2)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Pneumonia"
+         }
+        ]
+       },
+       {
+        "text": "2 (4.8)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Pneumonia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Nausea",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Nausea"
+         }
+        ]
+       },
+       {
+        "text": "1 (4.2)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Nausea"
+         }
+        ]
+       },
+       {
+        "text": "1 (2.4)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Nausea"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Pneumonitis",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Pneumonitis"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Pneumonitis"
+         }
+        ]
+       },
+       {
+        "text": "1 (2.4)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Pneumonitis"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Rash",
+      "indent": 1,
+      "cells": [
+       {
+        "text": "1 (5.6)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "ONK-44 400 mg",
+          "cat": "Rash"
+         }
+        ]
+       },
+       {
+        "text": "0",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Docetaxel",
+          "cat": "Rash"
+         }
+        ]
+       },
+       {
+        "text": "1 (2.4)",
+        "keys": [
+         {
+          "an": "PT",
+          "g": "Total",
+          "cat": "Rash"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "footnotes": []
+   }
+  },
+  {
    "id": "F1",
    "title": "Figure 14.2.1: Kaplan-Meier plot of progression-free survival by independent review",
    "kind": "figure",
@@ -4775,6 +8690,21 @@
     "id": "MTH_T7",
     "name": "Table 14.3.5: extent of exposure (safety population)",
     "description": "Duration of treatment in days: n, mean (SD), median, min, max."
+   },
+   {
+    "id": "MTH_T8",
+    "name": "Table 14.3.2: overview of treatment-emergent adverse events (safety population)",
+    "description": "Any TEAE; related; grade 3 or higher; serious; serious and related; leading to discontinuation; leading to interruption or dose reduction; fatal (grade 5); deaths (any cause). n (%). Columns: ONK-44 400 mg, Docetaxel, Total."
+   },
+   {
+    "id": "MTH_T9",
+    "name": "Table 14.3.1: treatment-emergent adverse events by system class and preferred term",
+    "description": "Participants with at least one TEAE; each system class with its preferred terms indented, by descending frequency in the Total column. n (%)."
+   },
+   {
+    "id": "MTH_T10",
+    "name": "Table 14.3.3: treatment-emergent adverse events of grade 3 or higher by preferred term",
+    "description": "Participants with at least one grade 3 or higher TEAE; each preferred term by descending frequency in the Total column. n (%)."
    }
   ],
   "analyses": [
@@ -4868,6 +8798,45 @@
       "resultsByGroup": true
      }
     ]
+   },
+   {
+    "id": "AN_T8",
+    "name": "Table 14.3.2: overview of treatment-emergent adverse events (safety population)",
+    "analysisSetId": "AS_SAF",
+    "methodId": "MTH_T8",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTA",
+      "resultsByGroup": true
+     }
+    ]
+   },
+   {
+    "id": "AN_T9",
+    "name": "Table 14.3.1: treatment-emergent adverse events by system class and preferred term",
+    "analysisSetId": "AS_SAF",
+    "methodId": "MTH_T9",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTA",
+      "resultsByGroup": true
+     }
+    ]
+   },
+   {
+    "id": "AN_T10",
+    "name": "Table 14.3.3: treatment-emergent adverse events of grade 3 or higher by preferred term",
+    "analysisSetId": "AS_SAF",
+    "methodId": "MTH_T10",
+    "orderedGroupings": [
+     {
+      "order": 1,
+      "groupingId": "GRP_TRTA",
+      "resultsByGroup": true
+     }
+    ]
    }
   ],
   "outputs": [
@@ -4918,6 +8887,27 @@
     "name": "Table 14.3.5: extent of exposure (safety population)",
     "analysisIds": [
      "AN_T7"
+    ]
+   },
+   {
+    "id": "OUT_T8",
+    "name": "Table 14.3.2: overview of treatment-emergent adverse events (safety population)",
+    "analysisIds": [
+     "AN_T8"
+    ]
+   },
+   {
+    "id": "OUT_T9",
+    "name": "Table 14.3.1: treatment-emergent adverse events by system class and preferred term",
+    "analysisIds": [
+     "AN_T9"
+    ]
+   },
+   {
+    "id": "OUT_T10",
+    "name": "Table 14.3.3: treatment-emergent adverse events of grade 3 or higher by preferred term",
+    "analysisIds": [
+     "AN_T10"
     ]
    },
    {

@@ -1,7 +1,7 @@
 // ONK-44-302 (MERIDIAN-2): a fictional randomised, open-label phase 3 study of ONK-44 400 mg once
 // daily against docetaxel 75 mg/m2 every 3 weeks in previously treated advanced non-small cell
 // lung cancer. The SDTM comes from the SDTM Mapping Trainer's RECIST 1.1 study (DM, DS, TU, TR, RS,
-// PR, DD). Primary endpoint: progression-free survival by blinded independent central review.
+// PR, DD, AE). Primary endpoint: progression-free survival by blinded independent central review.
 // Data cut-off 2026-10-31. Times are from randomisation (DS RANDOMIZED); medians are reported in
 // months (days / 30.4375). These programs feed the CSR & Narrative Studio's oncology report.
 import { ARD_SPEC, ARD_KEYS, ARD_HEAD, type Program, type StudyPack } from './types'
@@ -180,6 +180,76 @@ ${ARD_HEAD}for (g in groups) {
 ard_t7 <- do.call(rbind, rows)
 `
 
+const ADAE = String.raw`
+adae <- merge(ae, adsl[, c("USUBJID", "TRT01A", "TRTSDT", "TRTEDT", "SAFFL")], by = "USUBJID", all.x = TRUE)
+adae$ASTDT   <- as.Date(substr(adae$AESTDTC, 1, 10))
+adae$AENDT   <- as.Date(ifelse(!is.na(adae$AEENDTC) & nchar(adae$AEENDTC) >= 10, substr(adae$AEENDTC, 1, 10), NA))
+adae$ATOXGRN <- as.numeric(adae$AETOXGR)
+adae$ASTDY   <- as.numeric(adae$ASTDT - adae$TRTSDT) + 1
+adae$TRTEMFL <- ifelse(!is.na(adae$TRTSDT) & adae$ASTDT >= adae$TRTSDT & adae$ASTDT <= adae$TRTEDT + 30, "Y", "N")
+adae <- adae[order(adae$USUBJID, adae$AESEQ),
+             c("STUDYID", "USUBJID", "AESEQ", "AETERM", "AEDECOD", "AEBODSYS", "AETOXGR", "ATOXGRN", "AESER", "AEREL", "AEACN", "AEOUT", "AESDTH",
+               "TRT01A", "SAFFL", "ASTDT", "AENDT", "ASTDY", "TRTEMFL")]
+rownames(adae) <- NULL
+`
+
+const T8 = String.raw`
+pop <- adsl[adsl$SAFFL == "Y", ]
+te  <- adae[adae$TRTEMFL == "Y" & adae$SAFFL == "Y", ]
+groups <- ${G3}
+${ARD_HEAD}for (g in groups) {
+  x <- if (g == "Total") pop else pop[pop$TRT01A == g, ]; N <- nrow(x)
+  d <- if (g == "Total") te else te[te$TRT01A == g, ]
+  add("POP", g, NA, "N", N)
+  cnt <- function(an, sel) { k <- length(unique(d$USUBJID[sel])); add(an, g, NA, "n", k); add(an, g, NA, "pct", 100 * k / N) }
+  cnt("ANY", rep(TRUE, nrow(d))); cnt("REL", d$AEREL == "RELATED"); cnt("GR3", d$ATOXGRN >= 3); cnt("SER", d$AESER == "Y")
+  cnt("SERREL", d$AESER == "Y" & d$AEREL == "RELATED"); cnt("DISC", d$AEACN == "DRUG WITHDRAWN")
+  cnt("MOD", d$AEACN %in% c("DRUG INTERRUPTED", "DOSE REDUCED")); cnt("FATAL", d$ATOXGRN == 5)
+  k <- sum(x$DTHFL == "Y"); add("DEATH", g, NA, "n", k); add("DEATH", g, NA, "pct", 100 * k / N)
+}
+ard_t8 <- do.call(rbind, rows)
+`
+
+const T9 = String.raw`
+pop <- adsl[adsl$SAFFL == "Y", ]
+te  <- adae[adae$TRTEMFL == "Y" & adae$SAFFL == "Y", ]
+groups <- ${G3}
+${ARD_HEAD}for (g in groups) {
+  N <- if (g == "Total") nrow(pop) else sum(pop$TRT01A == g)
+  d <- if (g == "Total") te else te[te$TRT01A == g, ]
+  add("POP", g, NA, "N", N)
+  k <- length(unique(d$USUBJID)); add("ANY", g, NA, "n", k); add("ANY", g, NA, "pct", 100 * k / N)
+  for (soc in sort(unique(te$AEBODSYS))) {
+    k <- length(unique(d$USUBJID[d$AEBODSYS == soc])); add("SOC", g, soc, "n", k); add("SOC", g, soc, "pct", 100 * k / N)
+    for (pt in sort(unique(te$AEDECOD[te$AEBODSYS == soc]))) {
+      k <- length(unique(d$USUBJID[d$AEBODSYS == soc & d$AEDECOD == pt]))
+      add("PT", g, paste(soc, pt, sep = " | "), "n", k); add("PT", g, paste(soc, pt, sep = " | "), "pct", 100 * k / N)
+    }
+  }
+}
+ard_t9 <- do.call(rbind, rows)
+`
+
+const T10 = String.raw`
+pop <- adsl[adsl$SAFFL == "Y", ]
+te3 <- adae[adae$TRTEMFL == "Y" & adae$SAFFL == "Y" & adae$ATOXGRN >= 3, ]
+groups <- ${G3}
+${ARD_HEAD}for (g in groups) {
+  N <- if (g == "Total") nrow(pop) else sum(pop$TRT01A == g)
+  d <- if (g == "Total") te3 else te3[te3$TRT01A == g, ]
+  add("POP", g, NA, "N", N)
+  k <- length(unique(d$USUBJID)); add("ANY", g, NA, "n", k); add("ANY", g, NA, "pct", 100 * k / N)
+  for (pt in sort(unique(te3$AEDECOD))) { k <- length(unique(d$USUBJID[d$AEDECOD == pt])); add("PT", g, pt, "n", k); add("PT", g, pt, "pct", 100 * k / N) }
+}
+ard_t10 <- do.call(rbind, rows)
+`
+
+const L1 = String.raw`
+l1 <- adae[adae$AESER == "Y", c("USUBJID", "TRT01A", "AEDECOD", "AEBODSYS", "ASTDT", "AENDT", "ASTDY", "AETOXGR", "AEREL", "AEOUT", "TRTEMFL")]
+l1 <- l1[order(l1$TRT01A, l1$USUBJID, l1$ASTDT), ]
+rownames(l1) <- NULL
+`
+
 const F1 = String.raw`${KM}
 d <- adtte[adtte$PARAMCD == "PFS", ]; mon <- 30.4375
 f1 <- do.call(rbind, lapply(${G2}, function(g) { x <- d[d$TRT01P == g, ]; k <- km(x$AVAL, 1 - x$CNSR); k <- k[k$NEVENT > 0, ]
@@ -241,6 +311,33 @@ export const ONK_PROGRAMS: Program[] = [
   { id: 'T7', title: 'Table 14.3.5: extent of exposure (safety population)', kind: 'ard', area: 'Safety', output: 'ard_t7', keys: ARD_KEYS, ref: 'SAP 9.5; ICH E3 section 12.1', needs: ['ADSL'],
     intro: 'Duration of treatment in days by actual treatment.', spec: [...ARD_SPEC, { name: 'DUR', label: '', derivation: 'TRTDURD for the safety population: n, mean, sd, median, min, max.' }],
     starter: '# Duration of treatment.\n\n', reference: T7 },
+  { id: 'ADAE', title: 'ADAE: adverse events (occurrence data structure)', kind: 'dataset', area: 'ADaM', output: 'adae', keys: ['USUBJID', 'AESEQ'], ref: 'ADaM OCCDS IG v1.1', needs: ['ADSL'],
+    intro: 'One record per adverse event, with the actual treatment and the safety flag from ADSL, analysis dates, the numeric grade and the treatment-emergent flag. Inputs: ae, adsl.',
+    spec: [
+      { name: 'ASTDT, AENDT, ASTDY', label: 'Analysis dates', derivation: 'From AESTDTC and AEENDTC (an ongoing event has no AENDT); ASTDY = ASTDT - TRTSDT + 1.' },
+      { name: 'ATOXGRN', label: 'Grade (numeric)', derivation: 'as.numeric(AETOXGR), 1 to 5.' },
+      { name: 'TRTEMFL', label: 'Treatment-emergent', derivation: '"Y" when ASTDT is on or after TRTSDT and no later than TRTEDT + 30 days (the last daily dose of ONK-44, or the last docetaxel infusion); otherwise "N". A death from an adverse event after that window is still listed (Listing 16.2.7), but is not a TEAE.' },
+      { name: 'Also', label: '', derivation: 'STUDYID, USUBJID, AESEQ, AETERM, AEDECOD, AEBODSYS, AETOXGR, AESER, AEREL, AEACN, AEOUT, AESDTH from AE; TRT01A, SAFFL from ADSL. Sorted by USUBJID, AESEQ.' }],
+    starter: '# Build adae from ae and adsl.\n\nadae <- merge(ae, adsl[, c("USUBJID", "TRT01A", "TRTSDT", "TRTEDT", "SAFFL")], by = "USUBJID", all.x = TRUE)\n\n', reference: ADAE },
+  { id: 'T8', title: 'Table 14.3.2: overview of treatment-emergent adverse events (safety population)', kind: 'ard', area: 'Safety', output: 'ard_t8', keys: ARD_KEYS, ref: 'SAP 9.5; ICH E3 section 12.2', needs: ['ADSL', 'ADAE'],
+    intro: 'Participants with at least one TEAE of each kind, by actual treatment and in total: any, related, grade 3 or higher, serious, serious and related, leading to discontinuation, leading to interruption or dose reduction, fatal; and deaths from any cause.',
+    spec: [...ARD_SPEC, { name: 'Analyses', label: '', derivation: 'POP N; ANY, REL (AEREL "RELATED"), GR3 (ATOXGRN >= 3), SER, SERREL, DISC (AEACN "DRUG WITHDRAWN"), MOD ("DRUG INTERRUPTED" or "DOSE REDUCED"), FATAL (ATOXGRN 5) on TRTEMFL "Y": participants n and pct; DEATH: ADSL DTHFL "Y", n and pct.' }],
+    starter: '# TEAE overview for the safety population.\n\n', reference: T8,
+    shell: 'Any TEAE; related; grade 3 or higher; serious; serious and related; leading to discontinuation; leading to interruption or dose reduction; fatal (grade 5); deaths (any cause). n (%). Columns: ONK-44 400 mg, Docetaxel, Total.' },
+  { id: 'T9', title: 'Table 14.3.1: treatment-emergent adverse events by system class and preferred term', kind: 'ard', area: 'Safety', output: 'ard_t9', keys: ARD_KEYS, ref: 'SAP 9.5; ICH E3 section 12.2', needs: ['ADSL', 'ADAE'],
+    intro: 'Participants with at least one TEAE, then by system class (AEBODSYS) and preferred term (AEDECOD): n and % of the safety population, by actual treatment and in total.',
+    spec: [...ARD_SPEC, { name: 'Analyses', label: '', derivation: 'POP N; ANY; SOC (CATEGORY = AEBODSYS); PT (CATEGORY "<AEBODSYS> | <AEDECOD>"): participants n and pct.' }],
+    starter: '# TEAEs by system class and preferred term.\n\n', reference: T9,
+    shell: 'Participants with at least one TEAE; each system class with its preferred terms indented, by descending frequency in the Total column. n (%).' },
+  { id: 'T10', title: 'Table 14.3.3: treatment-emergent adverse events of grade 3 or higher by preferred term', kind: 'ard', area: 'Safety', output: 'ard_t10', keys: ARD_KEYS, ref: 'SAP 9.5; ICH E3 section 12.2', needs: ['ADSL', 'ADAE'],
+    intro: 'Participants with at least one TEAE of grade 3 or higher, then by preferred term.',
+    spec: [...ARD_SPEC, { name: 'Analyses', label: '', derivation: 'POP N; ANY and PT (CATEGORY = AEDECOD) on TRTEMFL "Y" and ATOXGRN >= 3: participants n and pct.' }],
+    starter: '# Grade 3 or higher TEAEs by preferred term.\n\n', reference: T10,
+    shell: 'Participants with at least one grade 3 or higher TEAE; each preferred term by descending frequency in the Total column. n (%).' },
+  { id: 'L1', title: 'Listing 16.2.7: serious adverse events', kind: 'listing', area: 'Listings', output: 'l1', keys: ['USUBJID', 'AEDECOD', 'ASTDT'], ref: 'ICH E3 section 16.2.7', needs: ['ADSL', 'ADAE'],
+    intro: 'Every serious adverse event, treatment-emergent or not, sorted by treatment, participant and start date. Columns: USUBJID, TRT01A, AEDECOD, AEBODSYS, ASTDT, AENDT, ASTDY, AETOXGR, AEREL, AEOUT, TRTEMFL.',
+    spec: [{ name: 'Selection', label: '', derivation: 'AESER "Y".' }, { name: 'Sort', label: '', derivation: 'TRT01A, USUBJID, ASTDT.' }],
+    starter: '# Serious AEs from adae.\n\n', reference: L1 },
   { id: 'F1', title: 'Figure 14.2.1: Kaplan-Meier plot of progression-free survival by independent review', kind: 'figure', area: 'Figures', output: 'f1', keys: ['TRT01P', 'TIME'], ref: 'SAP 9.3', needs: ['ADSL', 'ADTTE'],
     intro: 'Kaplan-Meier curves of PFS by planned treatment, in months. Build f1 (TRT01P, TIME, NRISK, NEVENT, NCENS, SURV) at each event time, then plot it.',
     spec: [{ name: 'f1', label: 'Plotted data', derivation: 'One row per treatment and event time: TIME in months (rounded to 0.1), the number at risk, events, censored and the Kaplan-Meier estimate.' }],
